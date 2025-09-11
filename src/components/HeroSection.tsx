@@ -1,8 +1,36 @@
 import { Button } from "@/components/ui/button";
 import { ArrowDown, Github, Linkedin, Mail, FileText } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
+import { useState, useEffect } from "react";
 
 const HeroSection = () => {
+  const [displayText, setDisplayText] = useState("");
+  const [isDeleting, setIsDeleting] = useState(false);
+  const [textIndex, setTextIndex] = useState(0);
+  
+  const texts = ["AI Researcher", "Machine Learning Scientist"];
+  
+  useEffect(() => {
+    const currentText = texts[textIndex];
+    const timeout = setTimeout(() => {
+      if (!isDeleting) {
+        if (displayText.length < currentText.length) {
+          setDisplayText(currentText.slice(0, displayText.length + 1));
+        } else {
+          setTimeout(() => setIsDeleting(true), 2000); // Pause before deleting
+        }
+      } else {
+        if (displayText.length > 0) {
+          setDisplayText(displayText.slice(0, -1));
+        } else {
+          setIsDeleting(false);
+          setTextIndex((prev) => (prev + 1) % texts.length);
+        }
+      }
+    }, isDeleting ? 50 : 100); // Faster deletion than typing
+    
+    return () => clearTimeout(timeout);
+  }, [displayText, isDeleting, textIndex, texts]);
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background with overlay */}
@@ -23,8 +51,9 @@ const HeroSection = () => {
           <h1 className="text-5xl md:text-7xl font-bold text-primary-foreground leading-tight">
             Dr. Alex Chen
           </h1>
-          <h2 className="text-xl md:text-2xl text-primary-foreground/90 font-medium">
-            AI Researcher & Machine Learning Scientist
+          <h2 className="text-xl md:text-2xl text-primary-foreground/90 font-medium min-h-[2rem]">
+            {displayText}
+            <span className="animate-pulse">|</span>
           </h2>
           <p className="text-lg md:text-xl text-primary-foreground/80 max-w-2xl mx-auto leading-relaxed">
             Advancing the frontiers of artificial intelligence through deep learning, 
