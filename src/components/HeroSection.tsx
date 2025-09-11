@@ -37,14 +37,15 @@ const HeroSection = () => {
   const handleViewSnapshot = () => {
     setResumeDialogOpen(false);
     setTimeout(() => {
-      const el = document.getElementById("resume-snapshot");
-      if (el) {
-        if (window.location.hash !== "#resume-snapshot") {
-          history.replaceState(null, "", "#resume-snapshot");
+      const anchor = document.getElementById("resume-anchor") || document.getElementById("resume-snapshot");
+      if (anchor) {
+        const y = anchor.getBoundingClientRect().top + window.scrollY - 80;
+        if (window.location.hash !== "#resume-anchor") {
+          window.history.replaceState(null, "", "#resume-anchor");
         }
-        el.scrollIntoView({ behavior: "smooth", block: "start" });
-        if (!el.hasAttribute("tabindex")) el.setAttribute("tabindex", "-1");
-        (el as HTMLElement).focus?.();
+        window.scrollTo({ top: y, behavior: "smooth" });
+        if (!anchor.hasAttribute("tabindex")) anchor.setAttribute("tabindex", "-1");
+        (anchor as HTMLElement).focus?.({ preventScroll: true });
       }
     }, 300);
   };
