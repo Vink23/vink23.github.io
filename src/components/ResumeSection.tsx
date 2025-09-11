@@ -1,29 +1,25 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
-import { ArrowLeft, Mail, Phone, MapPin, Globe, Github, Linkedin } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Mail, Phone, MapPin, Globe, Github, Linkedin } from "lucide-react";
 
-const Resume = () => {
+const ResumeSection = () => {
   return (
-    <div className="min-h-screen bg-gradient-section">
-      {/* Navigation */}
-      <nav className="p-6">
-        <Link to="/">
-          <Button variant="ghost" className="gap-2">
-            <ArrowLeft className="w-4 h-4" />
-            Back to Home
-          </Button>
-        </Link>
-      </nav>
+    <section id="resume-snapshot" className="py-20 bg-gradient-section">
+      <div className="max-w-6xl mx-auto px-6">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+            Resume
+          </h2>
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+            Professional experience, education, and technical expertise in neuro-inspired AI
+          </p>
+        </div>
 
-      {/* Resume Content */}
-      <div className="max-w-4xl mx-auto px-6 pb-12">
         <div className="bg-background rounded-lg shadow-lg p-8">
           {/* Header */}
           <header className="text-center mb-8 border-b pb-6">
-            <h1 className="text-4xl font-bold text-foreground mb-2">Dr. Alex Chen</h1>
-            <h2 className="text-xl text-muted-foreground mb-4">AI Researcher & Machine Learning Scientist</h2>
+            <h3 className="text-3xl font-bold text-foreground mb-2">Dr. Alex Chen</h3>
+            <h4 className="text-lg text-muted-foreground mb-4">AI Researcher & Machine Learning Scientist</h4>
             
             <div className="flex flex-wrap justify-center gap-4 text-sm text-muted-foreground">
               <div className="flex items-center gap-1">
@@ -56,9 +52,9 @@ const Resume = () => {
 
           {/* Professional Summary */}
           <section className="mb-8">
-            <h3 className="text-2xl font-bold text-foreground mb-4 border-l-4 border-primary pl-4">
+            <h5 className="text-xl font-bold text-foreground mb-4 border-l-4 border-primary pl-4">
               Professional Summary
-            </h3>
+            </h5>
             <p className="text-muted-foreground leading-relaxed">
               Leading AI researcher specializing in neuro-inspired artificial intelligence with 8+ years of experience 
               developing biologically-plausible neural networks, neuromorphic computing systems, and brain-inspired 
@@ -70,9 +66,9 @@ const Resume = () => {
 
           {/* Experience */}
           <section className="mb-8">
-            <h3 className="text-2xl font-bold text-foreground mb-4 border-l-4 border-primary pl-4">
+            <h5 className="text-xl font-bold text-foreground mb-4 border-l-4 border-primary pl-4">
               Professional Experience
-            </h3>
+            </h5>
             
             <div className="space-y-6">
               <Card className="border-l-4 border-tech-accent">
@@ -119,9 +115,9 @@ const Resume = () => {
 
           {/* Education */}
           <section className="mb-8">
-            <h3 className="text-2xl font-bold text-foreground mb-4 border-l-4 border-primary pl-4">
+            <h5 className="text-xl font-bold text-foreground mb-4 border-l-4 border-primary pl-4">
               Education
-            </h3>
+            </h5>
             
             <div className="space-y-4">
               <Card>
@@ -166,9 +162,9 @@ const Resume = () => {
 
           {/* Skills */}
           <section className="mb-8">
-            <h3 className="text-2xl font-bold text-foreground mb-4 border-l-4 border-primary pl-4">
+            <h5 className="text-xl font-bold text-foreground mb-4 border-l-4 border-primary pl-4">
               Technical Skills
-            </h3>
+            </h5>
             
             <div className="grid md:grid-cols-2 gap-6">
               <Card>
@@ -206,9 +202,9 @@ const Resume = () => {
 
           {/* Publications */}
           <section className="mb-8">
-            <h3 className="text-2xl font-bold text-foreground mb-4 border-l-4 border-primary pl-4">
+            <h5 className="text-xl font-bold text-foreground mb-4 border-l-4 border-primary pl-4">
               Selected Publications
-            </h3>
+            </h5>
             
             <div className="space-y-4 text-muted-foreground">
               <div className="border-l-2 border-muted pl-4">
@@ -230,9 +226,9 @@ const Resume = () => {
 
           {/* Awards */}
           <section>
-            <h3 className="text-2xl font-bold text-foreground mb-4 border-l-4 border-primary pl-4">
+            <h5 className="text-xl font-bold text-foreground mb-4 border-l-4 border-primary pl-4">
               Awards & Recognition
-            </h3>
+            </h5>
             
             <div className="grid md:grid-cols-2 gap-4">
               <div className="flex items-center gap-3">
@@ -270,8 +266,8 @@ const Resume = () => {
           </section>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
-export default Resume;
+export default ResumeSection;
