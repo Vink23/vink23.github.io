@@ -65,6 +65,10 @@ const HeroSection = () => {
               <Mail className="w-5 h-5" />
               Contact Me
             </Button>
+            <Button variant="hero" size="lg" className="gap-2">
+              <FileText className="w-5 h-5" />
+              View Resume
+            </Button>
           </div>
           
           <div className="flex gap-6 justify-center pt-6">

@@ -1,32 +1,32 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Brain, Cpu, Database, Zap } from "lucide-react";
+import { Brain, Cpu, Zap, Network } from "lucide-react";
 
 const ResearchSection = () => {
   const researchAreas = [
     {
       icon: Brain,
-      title: "Deep Learning",
-      description: "Developing novel neural network architectures and training methodologies for complex pattern recognition and decision making.",
-      keywords: ["Neural Networks", "Transformers", "Computer Vision"]
+      title: "Spiking Neural Networks",
+      description: "Developing biologically-plausible neural networks that communicate through discrete spikes, mimicking the temporal dynamics of real neurons.",
+      keywords: ["Temporal Coding", "Spike-Timing", "Neuromorphic AI"]
     },
     {
       icon: Cpu,
-      title: "Natural Language Processing",
-      description: "Creating advanced language models for understanding, generation, and reasoning across multiple languages and domains.",
-      keywords: ["LLMs", "Semantic Analysis", "Multilingual AI"]
-    },
-    {
-      icon: Database,
-      title: "Knowledge Graphs",
-      description: "Building intelligent systems that can represent, reason about, and extract insights from structured knowledge.",
-      keywords: ["Graph Neural Networks", "Ontologies", "Semantic Web"]
+      title: "Neuromorphic Computing",
+      description: "Creating energy-efficient hardware architectures inspired by the brain's structure and computational principles for next-generation AI systems.",
+      keywords: ["Neuromorphic Chips", "Memristors", "Edge Computing"]
     },
     {
       icon: Zap,
-      title: "Efficient AI",
-      description: "Optimizing AI models for resource-constrained environments while maintaining high performance and accuracy.",
-      keywords: ["Model Compression", "Edge AI", "Green Computing"]
+      title: "Neural Plasticity & Adaptation",
+      description: "Investigating how artificial neural networks can dynamically adapt and reorganize their connections, inspired by synaptic plasticity mechanisms.",
+      keywords: ["Hebbian Learning", "Synaptic Plasticity", "Adaptive Networks"]
+    },
+    {
+      icon: Network,
+      title: "Brain-Inspired Architectures",
+      description: "Designing novel AI architectures that replicate the hierarchical organization and distributed processing of biological neural systems.",
+      keywords: ["Cortical Models", "Attention Mechanisms", "Hierarchical Processing"]
     }
   ];
 
@@ -38,7 +38,7 @@ const ResearchSection = () => {
             Research Areas
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Exploring the cutting edge of artificial intelligence across multiple domains
+            Bridging neuroscience and artificial intelligence to create brain-inspired computational systems
           </p>
         </div>
         
