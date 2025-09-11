@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription, DialogTrigger, DialogFooter, DialogClose } from "@/components/ui/dialog";
 import { ArrowDown, Github, Linkedin, Mail, FileText } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
 import { useState, useEffect } from "react";
@@ -31,6 +32,18 @@ const HeroSection = () => {
     
     return () => clearTimeout(timeout);
   }, [displayText, isDeleting, textIndex, texts]);
+
+  const handleViewSnapshot = () => {
+    const el = document.getElementById("resume-snapshot");
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
+
+  const handleViewFullResume = () => {
+    window.open("/resume.pdf", "_blank", "noopener,noreferrer");
+  };
+
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background with overlay */}
@@ -65,10 +78,34 @@ const HeroSection = () => {
               <Mail className="w-5 h-5" />
               Contact Me
             </Button>
-            <Button variant="hero" size="lg" className="gap-2">
-              <FileText className="w-5 h-5" />
-              View Resume
-            </Button>
+            <Dialog>
+              <DialogTrigger asChild>
+                <Button variant="hero" size="lg" className="gap-2" aria-label="View resume options">
+                  <FileText className="w-5 h-5" />
+                  View Resume
+                </Button>
+              </DialogTrigger>
+              <DialogContent className="sm:max-w-md">
+                <DialogHeader>
+                  <DialogTitle>View Resume</DialogTitle>
+                  <DialogDescription>Choose how you want to view the resume.</DialogDescription>
+                </DialogHeader>
+                <DialogFooter className="sm:justify-start">
+                  <div className="flex flex-col sm:flex-row gap-3 w-full">
+                    <DialogClose asChild>
+                      <Button variant="neural" className="gap-2 w-full sm:w-auto" onClick={handleViewSnapshot}>
+                        View Snapshot
+                      </Button>
+                    </DialogClose>
+                    <DialogClose asChild>
+                      <Button variant="tech" className="gap-2 w-full sm:w-auto" onClick={handleViewFullResume}>
+                        View Full Resume (PDF)
+                      </Button>
+                    </DialogClose>
+                  </div>
+                </DialogFooter>
+              </DialogContent>
+            </Dialog>
           </div>
           
           <div className="flex gap-6 justify-center pt-6">
