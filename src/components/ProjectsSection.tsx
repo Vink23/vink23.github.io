@@ -1,0 +1,149 @@
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import { Github, ExternalLink, Star } from "lucide-react";
+
+const ProjectsSection = () => {
+  const projects = [
+    {
+      title: "NeuroFlow",
+      description: "An open-source framework for building and deploying neural network architectures with automatic optimization and distributed training capabilities.",
+      tech: ["Python", "PyTorch", "Docker", "Kubernetes"],
+      stars: "2.3k",
+      status: "Active",
+      type: "Framework",
+      highlights: ["Auto-scaling", "Model Zoo", "Distributed Training"]
+    },
+    {
+      title: "LangGraph Analytics",
+      description: "Real-time analytics platform for knowledge graphs with natural language querying and interactive visualization of complex relationships.",
+      tech: ["React", "D3.js", "Neo4j", "FastAPI"],
+      stars: "1.8k",
+      status: "Active",
+      type: "Platform",
+      highlights: ["NL Queries", "Real-time", "Interactive Viz"]
+    },
+    {
+      title: "EdgeAI Toolkit",
+      description: "Comprehensive toolkit for optimizing and deploying AI models on edge devices with automatic quantization and performance profiling.",
+      tech: ["TensorFlow Lite", "ONNX", "ARM", "CUDA"],
+      stars: "956",
+      status: "Stable",
+      type: "Toolkit",
+      highlights: ["Edge Optimization", "Auto Quantization", "Profiling"]
+    }
+  ];
+
+  return (
+    <section className="py-20 bg-gradient-section">
+      <div className="max-w-6xl mx-auto px-6">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+            Open Source Projects
+          </h2>
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+            Contributing to the AI community through open source tools and frameworks
+          </p>
+        </div>
+        
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {projects.map((project, index) => (
+            <Card 
+              key={index} 
+              className="group hover:shadow-neural transition-all duration-300 bg-gradient-card border-primary/10 h-full"
+            >
+              <CardHeader>
+                <div className="flex items-start justify-between mb-4">
+                  <div>
+                    <CardTitle className="text-xl text-foreground mb-2">
+                      {project.title}
+                    </CardTitle>
+                    <div className="flex items-center gap-3">
+                      <Badge 
+                        variant="secondary"
+                        className="bg-primary/10 text-primary"
+                      >
+                        {project.type}
+                      </Badge>
+                      <div className="flex items-center gap-1 text-sm text-muted-foreground">
+                        <Star className="w-4 h-4 fill-current" />
+                        {project.stars}
+                      </div>
+                    </div>
+                  </div>
+                  <Badge 
+                    variant={project.status === 'Active' ? 'default' : 'secondary'}
+                    className={project.status === 'Active' 
+                      ? 'bg-tech-accent/20 text-tech-accent' 
+                      : ''
+                    }
+                  >
+                    {project.status}
+                  </Badge>
+                </div>
+                
+                <CardDescription className="text-base leading-relaxed">
+                  {project.description}
+                </CardDescription>
+              </CardHeader>
+              
+              <CardContent className="space-y-6">
+                <div className="space-y-4">
+                  <div>
+                    <h4 className="text-sm font-medium text-foreground mb-2">Key Features</h4>
+                    <div className="flex flex-wrap gap-2">
+                      {project.highlights.map((highlight, idx) => (
+                        <Badge 
+                          key={idx}
+                          variant="outline"
+                          className="text-xs border-tech-accent/30 text-tech-accent"
+                        >
+                          {highlight}
+                        </Badge>
+                      ))}
+                    </div>
+                  </div>
+                  
+                  <div>
+                    <h4 className="text-sm font-medium text-foreground mb-2">Technologies</h4>
+                    <div className="flex flex-wrap gap-2">
+                      {project.tech.map((tech, idx) => (
+                        <Badge 
+                          key={idx}
+                          variant="secondary"
+                          className="text-xs bg-muted/50"
+                        >
+                          {tech}
+                        </Badge>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+                
+                <div className="flex gap-2">
+                  <Button variant="tech" size="sm" className="flex-1 gap-2">
+                    <Github className="w-4 h-4" />
+                    Code
+                  </Button>
+                  <Button variant="outline" size="sm" className="gap-2">
+                    <ExternalLink className="w-4 h-4" />
+                    Demo
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+        
+        <div className="text-center mt-12">
+          <Button variant="outline" size="lg" className="gap-2">
+            <Github className="w-5 h-5" />
+            View All Projects on GitHub
+          </Button>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default ProjectsSection;
