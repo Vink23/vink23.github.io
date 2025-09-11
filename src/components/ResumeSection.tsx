@@ -1,10 +1,8 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Mail, Phone, MapPin, Globe, Github, Linkedin } from "lucide-react";
-
 const ResumeSection = () => {
-  return (
-    <section id="resume-snapshot" className="py-20 bg-gradient-section">
+  return <section id="resume-snapshot" className="py-20 bg-gradient-section">
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
@@ -121,39 +119,30 @@ const ResumeSection = () => {
             
             <div className="space-y-4">
               <Card>
-                <CardHeader>
-                  <div className="flex justify-between items-start">
-                    <div>
-                      <CardTitle className="text-lg">Ph.D. in Computer Science</CardTitle>
-                      <p className="text-muted-foreground">Massachusetts Institute of Technology</p>
-                      <p className="text-sm text-muted-foreground">Thesis: "Temporal Dynamics in Spiking Neural Networks for Adaptive Learning"</p>
-                    </div>
-                    <Badge variant="outline">2013 - 2017</Badge>
-                  </div>
-                </CardHeader>
+                
               </Card>
 
               <Card>
                 <CardHeader>
                   <div className="flex justify-between items-start">
                     <div>
-                      <CardTitle className="text-lg">M.S. in Electrical Engineering</CardTitle>
-                      <p className="text-muted-foreground">Stanford University</p>
-                    </div>
-                    <Badge variant="outline">2011 - 2013</Badge>
-                  </div>
-                </CardHeader>
-              </Card>
-
-              <Card>
-                <CardHeader>
-                  <div className="flex justify-between items-start">
-                    <div>
-                      <CardTitle className="text-lg">B.S. in Computer Engineering</CardTitle>
+                      <CardTitle className="text-lg">M.S. in Data Science</CardTitle>
                       <p className="text-muted-foreground">University of California, Berkeley</p>
-                      <p className="text-sm text-muted-foreground">Summa Cum Laude, Phi Beta Kappa</p>
                     </div>
-                    <Badge variant="outline">2007 - 2011</Badge>
+                    <Badge variant="outline">2025</Badge>
+                  </div>
+                </CardHeader>
+              </Card>
+
+              <Card>
+                <CardHeader>
+                  <div className="flex justify-between items-start">
+                    <div>
+                      <CardTitle className="text-lg">B.S. in Computational Neuroscience</CardTitle>
+                      <p className="text-muted-foreground">University of California, Berkeley</p>
+                      
+                    </div>
+                    <Badge variant="outline">2022</Badge>
                   </div>
                 </CardHeader>
               </Card>
@@ -266,8 +255,6 @@ const ResumeSection = () => {
           </section>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default ResumeSection;
