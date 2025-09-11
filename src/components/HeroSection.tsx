@@ -36,12 +36,17 @@ const HeroSection = () => {
 
   const handleViewSnapshot = () => {
     setResumeDialogOpen(false);
-    requestAnimationFrame(() => {
+    setTimeout(() => {
       const el = document.getElementById("resume-snapshot");
       if (el) {
+        if (window.location.hash !== "#resume-snapshot") {
+          history.replaceState(null, "", "#resume-snapshot");
+        }
         el.scrollIntoView({ behavior: "smooth", block: "start" });
+        if (!el.hasAttribute("tabindex")) el.setAttribute("tabindex", "-1");
+        (el as HTMLElement).focus?.();
       }
-    });
+    }, 300);
   };
 
   const handleViewFullResume = () => {
