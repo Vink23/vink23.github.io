@@ -61,10 +61,6 @@ const HeroSection = () => {
           </p>
           
           <div className="flex flex-wrap gap-4 justify-center pt-8">
-            <Button variant="hero" size="lg" className="gap-2">
-              <FileText className="w-5 h-5" />
-              View Research
-            </Button>
             <Button variant="neural" size="lg" className="gap-2">
               <Mail className="w-5 h-5" />
               Contact Me

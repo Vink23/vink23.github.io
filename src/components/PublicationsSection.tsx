@@ -112,12 +112,6 @@ const PublicationsSection = () => {
             </Card>
           ))}
         </div>
-        
-        <div className="text-center mt-12">
-          <Button variant="outline" size="lg">
-            View All Publications
-          </Button>
-        </div>
       </div>
     </section>
   );
