@@ -3,8 +3,10 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription, Di
 import { ArrowDown, Github, Linkedin, Mail, FileText } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
 import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 const HeroSection = () => {
+  const navigate = useNavigate();
   const [displayText, setDisplayText] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);
   const [textIndex, setTextIndex] = useState(0);
@@ -34,10 +36,7 @@ const HeroSection = () => {
   }, [displayText, isDeleting, textIndex, texts]);
 
   const handleViewSnapshot = () => {
-    const el = document.getElementById("resume-snapshot");
-    if (el) {
-      el.scrollIntoView({ behavior: "smooth", block: "start" });
-    }
+    navigate("/resume");
   };
 
   const handleViewFullResume = () => {
