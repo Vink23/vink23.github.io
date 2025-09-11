@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription, DialogTrigger, DialogFooter, DialogClose } from "@/components/ui/dialog";
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription, DialogTrigger, DialogFooter } from "@/components/ui/dialog";
 import { ArrowDown, Github, Linkedin, Mail, FileText } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
 import { useState, useEffect } from "react";
@@ -8,6 +8,7 @@ const HeroSection = () => {
   const [displayText, setDisplayText] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);
   const [textIndex, setTextIndex] = useState(0);
+  const [resumeDialogOpen, setResumeDialogOpen] = useState(false);
   
   const texts = ["AI Researcher", "Machine Learning Scientist"];
   
@@ -34,13 +35,17 @@ const HeroSection = () => {
   }, [displayText, isDeleting, textIndex, texts]);
 
   const handleViewSnapshot = () => {
-    const el = document.getElementById("resume-snapshot");
-    if (el) {
-      el.scrollIntoView({ behavior: "smooth", block: "start" });
-    }
+    setResumeDialogOpen(false);
+    requestAnimationFrame(() => {
+      const el = document.getElementById("resume-snapshot");
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    });
   };
 
   const handleViewFullResume = () => {
+    setResumeDialogOpen(false);
     window.open("/resume.pdf", "_blank", "noopener,noreferrer");
   };
 
@@ -78,7 +83,7 @@ const HeroSection = () => {
               <Mail className="w-5 h-5" />
               Contact Me
             </Button>
-            <Dialog>
+            <Dialog open={resumeDialogOpen} onOpenChange={setResumeDialogOpen}>
               <DialogTrigger asChild>
                 <Button variant="hero" size="lg" className="gap-2" aria-label="View resume options">
                   <FileText className="w-5 h-5" />
@@ -92,16 +97,12 @@ const HeroSection = () => {
                 </DialogHeader>
                 <DialogFooter className="sm:justify-start">
                   <div className="flex flex-col sm:flex-row gap-3 w-full">
-                    <DialogClose asChild>
-                      <Button variant="neural" className="gap-2 w-full sm:w-auto" onClick={handleViewSnapshot}>
-                        View Snapshot
-                      </Button>
-                    </DialogClose>
-                    <DialogClose asChild>
-                      <Button variant="tech" className="gap-2 w-full sm:w-auto" onClick={handleViewFullResume}>
-                        View Full Resume (PDF)
-                      </Button>
-                    </DialogClose>
+                    <Button variant="neural" className="gap-2 w-full sm:w-auto" onClick={handleViewSnapshot}>
+                      View Snapshot
+                    </Button>
+                    <Button variant="tech" className="gap-2 w-full sm:w-auto" onClick={handleViewFullResume}>
+                      View Full Resume (PDF)
+                    </Button>
                   </div>
                 </DialogFooter>
               </DialogContent>
