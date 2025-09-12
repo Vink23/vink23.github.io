@@ -186,10 +186,10 @@ const ResumeSection = () => {
               Technical Skills
             </h5>
             
-            <div className="grid md:grid-cols-2 gap-6">
+            <div className="grid md:grid-cols-3 gap-6">
               <Card>
                 <CardHeader>
-                  <CardTitle className="text-lg">AI & Machine Learning</CardTitle>
+                  <CardTitle className="text-lg">AI/ML Domains</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <div className="flex flex-wrap gap-2">
@@ -204,7 +204,24 @@ const ResumeSection = () => {
 
               <Card>
                 <CardHeader>
-                  <CardTitle className="text-lg">Programming & Tools</CardTitle>
+                  <CardTitle className="text-lg">Libraries & Frameworks</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <div className="flex flex-wrap gap-2">
+                    <Badge variant="secondary">PyTorch</Badge>
+                    <Badge variant="secondary">TensorFlow</Badge>
+                    <Badge variant="secondary">Scikit-learn</Badge>
+                    <Badge variant="secondary">Pandas</Badge>
+                    <Badge variant="secondary">NumPy</Badge>
+                    <Badge variant="secondary">OpenCV</Badge>
+                    <Badge variant="secondary">Hugging Face</Badge>
+                  </div>
+                </CardContent>
+              </Card>
+
+              <Card>
+                <CardHeader>
+                  <CardTitle className="text-lg">Programming & Platforms</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <div className="flex flex-wrap gap-2">
