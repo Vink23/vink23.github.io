@@ -67,7 +67,7 @@ const ProjectsSection = () => {
                     </div>
                   </div>
                   
-                  <div className="min-h-[140px] md:min-h-[176px]">
+                  <div>
                     <h4 className="text-sm font-medium text-foreground mb-2">Technologies</h4>
                     <div className="flex flex-wrap gap-2">
                       {project.tech.map((tech, idx) => <Badge key={idx} variant="secondary" className="text-xs bg-muted/50">
