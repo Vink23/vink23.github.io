@@ -171,11 +171,16 @@ const ResumeSection = () => {
                 <CardContent>
                   <div className="flex flex-wrap gap-2">
                     <Badge variant="secondary">Python</Badge>
-                    <Badge variant="secondary">PyTorch</Badge>
-                    <Badge variant="secondary">JAX</Badge>
-                    <Badge variant="secondary">NEST Simulator</Badge>
-                    <Badge variant="secondary">Brian2</Badge>
+                    <Badge variant="secondary">SQL</Badge>
+                    <Badge variant="secondary">R</Badge>
+                    <Badge variant="secondary">Bash</Badge>
                     <Badge variant="secondary">CUDA</Badge>
+                    <Badge variant="secondary">AWS</Badge>
+                    <Badge variant="secondary">Git</Badge>
+                    <Badge variant="secondary">Docker</Badge>
+                    <Badge variant="secondary">Jupyter</Badge>
+                    <Badge variant="secondary">GCP</Badge>
+                    <Badge variant="secondary">Github</Badge>
                   </div>
                 </CardContent>
               </Card>
