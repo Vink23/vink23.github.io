@@ -3,15 +3,12 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription, Di
 import { ArrowDown, Github, Linkedin, Mail, FileText } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
 import { useState, useEffect } from "react";
-
 const HeroSection = () => {
   const [displayText, setDisplayText] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);
   const [textIndex, setTextIndex] = useState(0);
   const [resumeDialogOpen, setResumeDialogOpen] = useState(false);
-  
   const texts = ["AI Researcher", "Machine Learning Scientist"];
-  
   useEffect(() => {
     const currentText = texts[textIndex];
     const timeout = setTimeout(() => {
@@ -26,14 +23,13 @@ const HeroSection = () => {
           setDisplayText(displayText.slice(0, -1));
         } else {
           setIsDeleting(false);
-          setTextIndex((prev) => (prev + 1) % texts.length);
+          setTextIndex(prev => (prev + 1) % texts.length);
         }
       }
     }, isDeleting ? 50 : 100); // Faster deletion than typing
-    
+
     return () => clearTimeout(timeout);
   }, [displayText, isDeleting, textIndex, texts]);
-
   const handleViewSnapshot = () => {
     setResumeDialogOpen(false);
     setTimeout(() => {
@@ -43,38 +39,35 @@ const HeroSection = () => {
         if (window.location.hash !== "#resume-anchor") {
           window.history.replaceState(null, "", "#resume-anchor");
         }
-        window.scrollTo({ top: y, behavior: "smooth" });
+        window.scrollTo({
+          top: y,
+          behavior: "smooth"
+        });
         if (!anchor.hasAttribute("tabindex")) anchor.setAttribute("tabindex", "-1");
-        (anchor as HTMLElement).focus?.({ preventScroll: true });
+        (anchor as HTMLElement).focus?.({
+          preventScroll: true
+        });
       }
     }, 300);
   };
-
   const handleViewFullResume = () => {
     setResumeDialogOpen(false);
     window.open("/resume.pdf", "_blank", "noopener,noreferrer");
   };
-
-  return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+  return <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background with overlay */}
-      <div 
-        className="absolute inset-0 z-0"
-        style={{
-          backgroundImage: `url(${heroBg})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-        }}
-      >
+      <div className="absolute inset-0 z-0" style={{
+      backgroundImage: `url(${heroBg})`,
+      backgroundSize: 'cover',
+      backgroundPosition: 'center'
+    }}>
         <div className="absolute inset-0 bg-gradient-hero opacity-80" />
       </div>
       
       {/* Content */}
       <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
         <div className="space-y-6 animate-fade-in">
-          <h1 className="text-5xl md:text-7xl font-bold text-primary-foreground leading-tight">
-            Dr. Alex Chen
-          </h1>
+          <h1 className="text-5xl md:text-7xl font-bold text-primary-foreground leading-tight">Vinith Kuruppu</h1>
           <h2 className="text-xl md:text-2xl text-primary-foreground/90 font-medium min-h-[2rem]">
             {displayText}
             <span className="animate-pulse">|</span>
@@ -133,8 +126,6 @@ const HeroSection = () => {
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10">
         <ArrowDown className="w-6 h-6 text-primary-foreground/60 animate-bounce" />
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default HeroSection;
