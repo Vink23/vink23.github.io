@@ -15,17 +15,17 @@ const ContactSection = () => {
           <Card className="border-border/[0.02] max-w-4xl mx-auto bg-card/50 backdrop-blur-sm">
             <CardHeader className="text-center">
             </CardHeader>
-            <CardContent className="text-center">
+            <CardContent className="flex items-center justify-center py-8">
               <div className="flex items-center justify-center gap-8">
-                <div className="p-3 rounded-lg bg-primary/10">
+                <div className="p-3 rounded-lg bg-primary/10 flex items-center justify-center">
                   <Mail className="w-8 h-8 text-primary" />
                 </div>
                 
-                <div className="p-3 rounded-lg bg-primary/10">
+                <div className="p-3 rounded-lg bg-primary/10 flex items-center justify-center">
                   <Github className="w-8 h-8 text-primary" />
                 </div>
                 
-                <div className="p-3 rounded-lg bg-primary/10">
+                <div className="p-3 rounded-lg bg-primary/10 flex items-center justify-center">
                   <Linkedin className="w-8 h-8 text-primary" />
                 </div>
               </div>
