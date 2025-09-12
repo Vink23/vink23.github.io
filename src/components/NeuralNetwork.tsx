@@ -410,7 +410,7 @@ export const NeuralNetwork = ({
           /* Collapsed Button */
           <button
             onClick={() => setIsStatsExpanded(true)}
-            className="p-3 bg-card/90 backdrop-blur-sm rounded-lg border border-border shadow-neural hover:shadow-lg neural-transition hover-neural-glow pointer-events-auto"
+            className="p-3 bg-card/95 backdrop-blur-sm rounded-lg border border-border shadow-neural hover:shadow-lg neural-transition hover-neural-glow pointer-events-auto"
           >
             <div className="flex items-center gap-2">
               <div className="relative">
