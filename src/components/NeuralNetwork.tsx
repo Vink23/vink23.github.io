@@ -457,7 +457,7 @@ export const NeuralNetwork = ({
                   </div>
                   <div className="flex justify-between">
                     <span className="text-muted-foreground">Network Activity:</span>
-                    <span className="text-primary-foreground font-semibold">{networkStats.synapticActivity}</span>
+                    <span className="text-foreground font-semibold">{networkStats.synapticActivity}</span>
                   </div>
                   <div className="flex justify-between">
                     <span className="text-muted-foreground">Density:</span>
