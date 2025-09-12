@@ -17,9 +17,9 @@ const ContactSection = () => {
           </p>
         </div>
         
-        <div className="grid lg:grid-cols-3 gap-8">
+        <div className="grid lg:grid-cols-1 gap-8">
           {/* Contact Info */}
-          <div className="lg:col-span-2 space-y-6">
+          <div className="space-y-6">
             <Card className="border-primary/10">
               <CardHeader>
                 <CardTitle className="text-xl text-foreground">Get in Touch</CardTitle>
@@ -73,14 +73,6 @@ const ContactSection = () => {
                   <li>• Technical consulting</li>
                 </ul>
               </CardContent>
-            </Card>
-          </div>
-          
-          {/* Contact Form */}
-          <div className="lg:col-span-1">
-            <Card className="border-primary/10">
-              
-              
             </Card>
           </div>
         </div>
