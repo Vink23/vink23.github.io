@@ -10,7 +10,7 @@ const ProjectsSection = () => {
     stars: "2.3k",
     status: "Active",
     types: ["Framework", "Medical AI"],
-    highlights: ["Domain-Adapted Retriever", "Cross-Encoder Reranking", "LoRA Fine-Tuning", "LLM-as-a-Judge"]
+    highlights: ["Domain-Adapted Retriever", "Cross-Encoder Reranking", "LoRA Fine-Tuning", "Faithfulness Evaluation"]
   }, {
     title: "PathoVision",
     description: "A hybrid computer vision pipeline that classifies brain tumors with 96.7% accuracy by fusing classical features (edges, textures) with deep embeddings from a DINOv2 Vision Transformer.",
@@ -58,7 +58,7 @@ const ProjectsSection = () => {
               
               <CardContent className="space-y-6">
                 <div className="space-y-4">
-                  <div>
+                  <div className="min-h-[80px]">
                     <h4 className="text-sm font-medium text-foreground mb-2">Key Features</h4>
                     <div className="flex flex-wrap gap-2">
                       {project.highlights.map((highlight, idx) => <Badge key={idx} variant="outline" className="text-xs border-tech-accent/30 text-tech-accent">
@@ -67,7 +67,7 @@ const ProjectsSection = () => {
                     </div>
                   </div>
                   
-                  <div>
+                  <div className="min-h-[80px]">
                     <h4 className="text-sm font-medium text-foreground mb-2">Technologies</h4>
                     <div className="flex flex-wrap gap-2">
                       {project.tech.map((tech, idx) => <Badge key={idx} variant="secondary" className="text-xs bg-muted/50">
