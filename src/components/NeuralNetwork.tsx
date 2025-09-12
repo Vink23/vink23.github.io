@@ -405,12 +405,12 @@ export const NeuralNetwork = ({
       </svg>
       
       {/* Neural Activity Toggle */}
-      <div className="absolute bottom-24 right-4 z-50">
+      <div className="absolute bottom-8 right-8 z-[100]">
         {!isStatsExpanded ? (
           /* Collapsed Button */
           <button
             onClick={() => setIsStatsExpanded(true)}
-            className="p-2 bg-card backdrop-blur-sm rounded-lg border border-border shadow-neural hover:shadow-lg neural-transition hover-neural-glow"
+            className="p-3 bg-card/90 backdrop-blur-sm rounded-lg border border-border shadow-neural hover:shadow-lg neural-transition hover-neural-glow pointer-events-auto"
           >
             <div className="flex items-center gap-2">
               <div className="relative">
@@ -424,9 +424,9 @@ export const NeuralNetwork = ({
           </button>
         ) : (
           /* Expanded Statistics Panel */
-          <div className="space-y-2">
+          <div className="space-y-2 pointer-events-auto">
             {/* Main Activity Indicator */}
-            <div className="p-3 bg-card backdrop-blur-sm rounded-lg border border-border shadow-neural">
+            <div className="p-3 bg-card/90 backdrop-blur-sm rounded-lg border border-border shadow-neural">
               <div className="flex items-center justify-between mb-2">
                 <div className="flex items-center gap-3">
                   <div className="relative">
@@ -469,7 +469,7 @@ export const NeuralNetwork = ({
             </div>
             
             {/* Neuron Type Legend */}
-            <div className="p-2 bg-card backdrop-blur-sm rounded-lg border border-border text-xs">
+            <div className="p-2 bg-card/90 backdrop-blur-sm rounded-lg border border-border text-xs">
               <div className="font-medium text-foreground mb-1">Neuron Types</div>
               <div className="space-y-1">
                 <div className="flex items-center gap-2">
