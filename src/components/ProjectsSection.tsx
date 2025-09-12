@@ -8,11 +8,11 @@ const ProjectsSection = () => {
     {
       title: "SurgiRAG",
       description: "An open-source framework for building and deploying neural network architectures with automatic optimization and distributed training capabilities.",
-      tech: ["Python", "PyTorch", "Docker", "Kubernetes"],
+      tech: ["Python", "PyTorch", "HuggingFace", "PEFT (LoRA)", "FAISS", "SentenceTransformers"],
       stars: "2.3k",
       status: "Active",
-      type: "Framework",
-      highlights: ["Auto-scaling", "Model Zoo", "Distributed Training"]
+      types: ["Framework", "Medical AI"],
+      highlights: ["Domain-Adapted Retriever", "Cross-Encoder Reranking", "LoRA Fine-Tuning", "Faithfulness Evaluation"]
     },
     {
       title: "LangGraph Analytics",
@@ -50,12 +50,15 @@ const ProjectsSection = () => {
                       {project.title}
                     </CardTitle>
                     <div className="flex items-center gap-3">
-                      <Badge 
-                        variant="secondary"
-                        className="bg-primary/10 text-primary"
-                      >
-                        {project.type}
-                      </Badge>
+                      {(project.types || [project.type]).map((type, typeIdx) => (
+                        <Badge 
+                          key={typeIdx}
+                          variant="secondary"
+                          className="bg-primary/10 text-primary"
+                        >
+                          {type}
+                        </Badge>
+                      ))}
                       <div className="flex items-center gap-1 text-sm text-muted-foreground">
                         <Star className="w-4 h-4 fill-current" />
                         {project.stars}
