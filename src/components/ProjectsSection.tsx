@@ -58,7 +58,7 @@ const ProjectsSection = () => {
               
               <CardContent className="space-y-6">
                 <div className="space-y-4">
-                  <div className="min-h-[73px]">
+                  <div className="min-h-[78px]">
                     <h4 className="text-sm font-medium text-foreground mb-2">Key Features</h4>
                     <div className="flex flex-wrap gap-2">
                       {project.highlights.map((highlight, idx) => <Badge key={idx} variant="outline" className="text-xs border-tech-accent/30 text-tech-accent">
