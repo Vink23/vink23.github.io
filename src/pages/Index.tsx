@@ -1,5 +1,5 @@
 import HeroSection from "@/components/HeroSection";
-import ResearchSection from "@/components/ResearchSection";
+import AboutSection from "@/components/AboutSection";
 import ResumeSection from "@/components/ResumeSection";
 import ProjectsSection from "@/components/ProjectsSection";
 import ContactSection from "@/components/ContactSection";
@@ -10,7 +10,7 @@ const Index = () => {
     <main className="min-h-screen">
       <ThemeToggle />
       <HeroSection />
-      <ResearchSection />
+      <AboutSection />
       <ResumeSection />
       <ProjectsSection />
       <ContactSection />
