@@ -63,7 +63,7 @@ const ResumeSection = () => {
             
             <div className="space-y-6">
               <Card className="border-l-4 border-tech-accent">
-                <CardHeader>
+                <CardHeader className="pb-2">
                   <div className="flex justify-between items-start">
                     <div>
                       <CardTitle className="text-lg">Graduate Student Instructor</CardTitle>
@@ -72,7 +72,7 @@ const ResumeSection = () => {
                     <Badge variant="secondary">Jan 2025 - Present</Badge>
                   </div>
                 </CardHeader>
-                <CardContent>
+                <CardContent className="pt-2">
                   <ul className="list-disc list-inside space-y-2 text-muted-foreground">
                     <li>Mentored graduate students on experimental design and causal inference, raising proposal quality by 20% as
                     measured by rubric scores.</li>
@@ -84,7 +84,7 @@ const ResumeSection = () => {
               </Card>
 
               <Card className="border-l-4 border-tech-accent">
-                <CardHeader>
+                <CardHeader className="pb-2">
                   <div className="flex justify-between items-start">
                     <div>
                       <CardTitle className="text-lg">AI/ML Research Associate</CardTitle>
@@ -93,7 +93,7 @@ const ResumeSection = () => {
                     <Badge variant="secondary">May 2024 - May 2025</Badge>
                   </div>
                 </CardHeader>
-                <CardContent>
+                <CardContent className="pt-2">
                   <ul className="list-disc list-inside space-y-2 text-muted-foreground">
                     <li>Built fairness-aware allocation models that directed $70 billon across 3,300+ hospitals, reducing variance
                     between need and award and improving equity across US regions.</li>
@@ -108,7 +108,7 @@ const ResumeSection = () => {
               </Card>
 
               <Card className="border-l-4 border-tech-accent">
-                <CardHeader>
+                <CardHeader className="pb-2">
                   <div className="flex justify-between items-start">
                     <div>
                       <CardTitle className="text-lg">Research Data Scienctist</CardTitle>
@@ -117,7 +117,7 @@ const ResumeSection = () => {
                     <Badge variant="secondary">July 2022 - May 2024</Badge>
                   </div>
                 </CardHeader>
-                <CardContent>
+                <CardContent className="pt-2">
                   <ul className="list-disc list-inside space-y-2 text-muted-foreground">
                     <li>Built Python pipelines ingesting data from 3,000+ biosensors, cutting integration time by 15% and reducing
                     pipeline latency.</li>
@@ -132,7 +132,7 @@ const ResumeSection = () => {
               </Card>
 
               <Card className="border-l-4 border-tech-accent">
-                <CardHeader>
+                <CardHeader className="pb-2">
                   <div className="flex justify-between items-start">
                     <div>
                       <CardTitle className="text-lg">Computer Vision Research Assistant</CardTitle>
@@ -141,7 +141,7 @@ const ResumeSection = () => {
                     <Badge variant="secondary">Jan 2020 - June 2022</Badge>
                   </div>
                 </CardHeader>
-                <CardContent>
+                <CardContent className="pt-2">
                   <ul className="list-disc list-inside space-y-2 text-muted-foreground">
                     <li>Led a 6-person team to build DL/CV models of human visual perception and established a lab benchmark for
                     object recognition.</li>
