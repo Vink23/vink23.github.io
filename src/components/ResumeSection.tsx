@@ -111,9 +111,7 @@ const ResumeSection = () => {
             </h5>
             
             <div className="space-y-4">
-              <Card>
-                
-              </Card>
+              
 
               <Card>
                 <CardHeader>
