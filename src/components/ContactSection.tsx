@@ -21,14 +21,14 @@ const ContactSection = () => {
           {/* Contact Info */}
           <div className="space-y-6">
             <Card className="border-primary/10">
-              <CardHeader>
+              <CardHeader className="text-center">
                 <CardTitle className="text-xl text-foreground">Get in Touch</CardTitle>
                 <CardDescription>
                   Available for research collaborations and consulting opportunities
                 </CardDescription>
               </CardHeader>
-              <CardContent className="space-y-4">
-                <div className="flex items-center gap-3">
+              <CardContent className="space-y-4 text-center">
+                <div className="flex items-center justify-center gap-3">
                   <div className="p-2 rounded-lg bg-primary/10">
                     <Mail className="w-5 h-5 text-primary" />
                   </div>
@@ -38,7 +38,7 @@ const ContactSection = () => {
                   </div>
                 </div>
                 
-                <div className="flex items-center gap-3">
+                <div className="flex items-center justify-center gap-3">
                   <div className="p-2 rounded-lg bg-primary/10">
                     <MapPin className="w-5 h-5 text-primary" />
                   </div>
@@ -48,7 +48,7 @@ const ContactSection = () => {
                   </div>
                 </div>
                 
-                <div className="flex items-center gap-3">
+                <div className="flex items-center justify-center gap-3">
                   <div className="p-2 rounded-lg bg-primary/10">
                     <Calendar className="w-5 h-5 text-primary" />
                   </div>
