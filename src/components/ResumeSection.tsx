@@ -102,6 +102,46 @@ const ResumeSection = () => {
                   </ul>
                 </CardContent>
               </Card>
+
+              <Card className="border-l-4 border-tech-accent">
+                <CardHeader>
+                  <div className="flex justify-between items-start">
+                    <div>
+                      <CardTitle className="text-lg">Machine Learning Engineer</CardTitle>
+                      <p className="text-muted-foreground">TechCorp AI Division</p>
+                    </div>
+                    <Badge variant="secondary">2015 - 2017</Badge>
+                  </div>
+                </CardHeader>
+                <CardContent>
+                  <ul className="list-disc list-inside space-y-2 text-muted-foreground">
+                    <li>Built production-ready ML pipelines processing 10M+ data points daily</li>
+                    <li>Implemented real-time recommendation systems increasing user engagement by 35%</li>
+                    <li>Optimized deep learning models for mobile deployment, reducing inference time by 60%</li>
+                    <li>Led cross-functional team of 6 engineers delivering AI-powered product features</li>
+                  </ul>
+                </CardContent>
+              </Card>
+
+              <Card className="border-l-4 border-tech-accent">
+                <CardHeader>
+                  <div className="flex justify-between items-start">
+                    <div>
+                      <CardTitle className="text-lg">Research Intern</CardTitle>
+                      <p className="text-muted-foreground">Google DeepMind</p>
+                    </div>
+                    <Badge variant="secondary">Summer 2014</Badge>
+                  </div>
+                </CardHeader>
+                <CardContent>
+                  <ul className="list-disc list-inside space-y-2 text-muted-foreground">
+                    <li>Contributed to research on attention mechanisms in transformer architectures</li>
+                    <li>Implemented and tested novel optimization algorithms for large language models</li>
+                    <li>Collaborated with senior researchers on scaling laws for neural networks</li>
+                    <li>Presented findings at internal research symposium</li>
+                  </ul>
+                </CardContent>
+              </Card>
             </div>
           </section>
 
