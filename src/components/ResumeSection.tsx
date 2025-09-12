@@ -101,6 +101,46 @@ const ResumeSection = () => {
                   </ul>
                 </CardContent>
               </Card>
+
+              <Card className="border-l-4 border-tech-accent">
+                <CardHeader>
+                  <div className="flex justify-between items-start">
+                    <div>
+                      <CardTitle className="text-lg">Machine Learning Engineer</CardTitle>
+                      <p className="text-muted-foreground">DeepMind Technologies</p>
+                    </div>
+                    <Badge variant="secondary">2015 - 2017</Badge>
+                  </div>
+                </CardHeader>
+                <CardContent>
+                  <ul className="list-disc list-inside space-y-2 text-muted-foreground">
+                    <li>Implemented and optimized deep learning models for computer vision and natural language processing</li>
+                    <li>Contributed to reinforcement learning research projects with focus on game-playing AI</li>
+                    <li>Developed distributed training systems for large-scale neural networks</li>
+                    <li>Published 3 papers on attention mechanisms and transformer architectures</li>
+                  </ul>
+                </CardContent>
+              </Card>
+
+              <Card className="border-l-4 border-tech-accent">
+                <CardHeader>
+                  <div className="flex justify-between items-start">
+                    <div>
+                      <CardTitle className="text-lg">Research Assistant</CardTitle>
+                      <p className="text-muted-foreground">MIT Computer Science and Artificial Intelligence Laboratory</p>
+                    </div>
+                    <Badge variant="secondary">2013 - 2015</Badge>
+                  </div>
+                </CardHeader>
+                <CardContent>
+                  <ul className="list-disc list-inside space-y-2 text-muted-foreground">
+                    <li>Assisted in developing novel neural network architectures for pattern recognition</li>
+                    <li>Conducted experiments on unsupervised learning and feature extraction methods</li>
+                    <li>Co-authored 5 research papers on machine learning and computational neuroscience</li>
+                    <li>Maintained laboratory computing infrastructure and data processing pipelines</li>
+                  </ul>
+                </CardContent>
+              </Card>
             </div>
           </section>
 
