@@ -87,18 +87,22 @@ const ResumeSection = () => {
                 <CardHeader>
                   <div className="flex justify-between items-start">
                     <div>
-                      <CardTitle className="text-lg">AI Research Scientist</CardTitle>
-                      <p className="text-muted-foreground">Neural Dynamics Lab, Stanford University</p>
+                      <CardTitle className="text-lg">AI/ML Research Associate</CardTitle>
+                      <p className="text-muted-foreground">RAND Corporation</p>
                     </div>
-                    <Badge variant="secondary">2017 - 2020</Badge>
+                    <Badge variant="secondary">May 2024 - May 2025</Badge>
                   </div>
                 </CardHeader>
                 <CardContent>
                   <ul className="list-disc list-inside space-y-2 text-muted-foreground">
-                    <li>Developed biologically-plausible learning algorithms inspired by synaptic plasticity</li>
-                    <li>Collaborated with neuroscientists to validate computational models against biological data</li>
-                    <li>Created open-source framework for spiking neural network simulation (500+ GitHub stars)</li>
-                    <li>Mentored 4 PhD students and 8 undergraduate researchers</li>
+                    <li>Built fairness-aware allocation models that directed $70 billon across 3,300+ hospitals, reducing variance
+                    between need and award and improving equity across US regions.</li>
+                    <li>Developed Python pipelines for hospital-expense modeling that improved predictive accuracy by 22% vs. baseline,
+                    establishing cost-ceiling estimates used in FEMA funding reviews.</li>
+                    <li>Designed and validated disaster-response modeling frameworks that informed federal preparedness policy
+                    decisions.</li>
+                    <li>Authored 30+ technical reports used by congressional committees, FEMA, and RAND leadership, driving ongoing
+                    allocation-QA workstreams</li>
                   </ul>
                 </CardContent>
               </Card>
@@ -107,18 +111,22 @@ const ResumeSection = () => {
                 <CardHeader>
                   <div className="flex justify-between items-start">
                     <div>
-                      <CardTitle className="text-lg">Machine Learning Engineer</CardTitle>
-                      <p className="text-muted-foreground">TechCorp AI Division</p>
+                      <CardTitle className="text-lg">Research Data Scienctist</CardTitle>
+                      <p className="text-muted-foreground">Exponent Incorporated</p>
                     </div>
-                    <Badge variant="secondary">2015 - 2017</Badge>
+                    <Badge variant="secondary">July 2022 - May 2024</Badge>
                   </div>
                 </CardHeader>
                 <CardContent>
                   <ul className="list-disc list-inside space-y-2 text-muted-foreground">
-                    <li>Built production-ready ML pipelines processing 10M+ data points daily</li>
-                    <li>Implemented real-time recommendation systems increasing user engagement by 35%</li>
-                    <li>Optimized deep learning models for mobile deployment, reducing inference time by 60%</li>
-                    <li>Led cross-functional team of 6 engineers delivering AI-powered product features</li>
+                    <li>Built Python pipelines ingesting data from 3,000+ biosensors, cutting integration time by 15% and reducing
+                    pipeline latency.</li>
+                    <li>Led end-to-end FDA-compliant validation for biosensor trials, achieving 100% pass on internal QA audits and
+                    enabling accurate real-time health monitoring</li>
+                    <li>Analyzed high-frequency signals to prioritize design changes for a $12B product line, shortening decision cycles by
+                    20% and increasing signal-quality pass rateli>
+                    <li>Diagnosed and resolved defects in proprietary study software, raising automated test coverage from 42% to 78%
+                    and accelerating release cadence by 50%</li>
                   </ul>
                 </CardContent>
               </Card>
@@ -127,18 +135,22 @@ const ResumeSection = () => {
                 <CardHeader>
                   <div className="flex justify-between items-start">
                     <div>
-                      <CardTitle className="text-lg">Research Intern</CardTitle>
-                      <p className="text-muted-foreground">Google DeepMind</p>
+                      <CardTitle className="text-lg">Computer Vision Research Assistant</CardTitle>
+                      <p className="text-muted-foreground">Loyola University Chicago</p>
                     </div>
-                    <Badge variant="secondary">Summer 2014</Badge>
+                    <Badge variant="secondary">Jan 2020 - June 2022</Badge>
                   </div>
                 </CardHeader>
                 <CardContent>
                   <ul className="list-disc list-inside space-y-2 text-muted-foreground">
-                    <li>Contributed to research on attention mechanisms in transformer architectures</li>
-                    <li>Implemented and tested novel optimization algorithms for large language models</li>
-                    <li>Collaborated with senior researchers on scaling laws for neural networks</li>
-                    <li>Presented findings at internal research symposium</li>
+                    <li>Led a 6-person team to build DL/CV models of human visual perception and established a lab benchmark for
+                    object recognition.</li>
+                    <li>Improved model accuracy by 11% vs. prior lab baseline on object recognition tasks by systematic TensorFlow
+                    hyperparameter search, targeted augmentations, and architecture refinements.</li>
+                    <li>Engineered Python data pipelines for image and behavioral datasets, reducing preprocessing time by 30% and
+                    cutting experiment turnaround time.</li>
+                    <li>Developed papers and technical documentation that supported new grant funding and standardized analysis
+                    methods across the lab</li>
                   </ul>
                 </CardContent>
               </Card>
