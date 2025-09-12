@@ -7,12 +7,12 @@ const ProjectsSection = () => {
   const projects = [
     {
       title: "SurgiRAG",
-      description: "An open-source framework for building and deploying neural network architectures with automatic optimization and distributed training capabilities.",
+      description: "An end-to-end surgical QA system using a fine-tuned BioBERT retriever and LoRA-adapted LLaMA-3 to generate factually grounded answers, outperforming baselines by over 40 percentage points on faithfulness metrics.",
       tech: ["Python", "PyTorch", "HuggingFace", "PEFT (LoRA)", "FAISS", "SentenceTransformers"],
       stars: "2.3k",
       status: "Active",
       types: ["Framework", "Medical AI"],
-      highlights: ["Domain-Adapted Retriever", "Cross-Encoder Reranking", "LoRA Fine-Tuning", "Faithfulness Evaluation"]
+      highlights: ["Domain-Adapted Retriever", "Cross-Encoder Reranking", "LoRA Fine-Tuning", "LLM-as-a-Judge"]
     },
     {
       title: "LangGraph Analytics",
