@@ -63,7 +63,7 @@ const HeroSection = () => {
           connectionProbability={0.3}
           layers={6}
         />
-        <div className="absolute inset-0 bg-gradient-hero opacity-60" />
+        <div className="absolute inset-0 bg-gradient-hero opacity-60 pointer-events-none" />
       </div>
       
       {/* Content */}
