@@ -12,7 +12,11 @@ const ContactSection = () => {
             Let's Collaborate
           </h2>
           
-          <Card className="border-primary/10 max-w-4xl mx-auto">
+           <Card className="max-w-4xl mx-auto relative border-0 bg-card/50 backdrop-blur-sm">
+             <div className="absolute inset-0 rounded-lg bg-gradient-to-r from-transparent via-primary/20 to-transparent p-[1px]">
+               <div className="w-full h-full bg-card rounded-lg"></div>
+             </div>
+             <div className="relative z-10">
             <CardHeader className="text-center">
               <CardTitle className="text-xl text-foreground relative inline-block px-8 py-4">
                 <span className="relative z-10">Get in Touch</span>
@@ -27,22 +31,23 @@ const ContactSection = () => {
                 Available for research collaborations and consulting opportunities
               </CardDescription>
             </CardHeader>
-            <CardContent className="text-center">
-              <div className="flex items-center justify-center gap-8">
-                <div className="p-3 rounded-lg bg-primary/10">
-                  <Mail className="w-8 h-8 text-primary" />
-                </div>
-                
-                <div className="p-3 rounded-lg bg-primary/10">
-                  <Github className="w-8 h-8 text-primary" />
-                </div>
-                
-                <div className="p-3 rounded-lg bg-primary/10">
-                  <Linkedin className="w-8 h-8 text-primary" />
-                </div>
-              </div>
-            </CardContent>
-          </Card>
+             <CardContent className="text-center">
+               <div className="flex items-center justify-center gap-8">
+                 <div className="p-3 rounded-lg bg-primary/10">
+                   <Mail className="w-8 h-8 text-primary" />
+                 </div>
+                 
+                 <div className="p-3 rounded-lg bg-primary/10">
+                   <Github className="w-8 h-8 text-primary" />
+                 </div>
+                 
+                 <div className="p-3 rounded-lg bg-primary/10">
+                   <Linkedin className="w-8 h-8 text-primary" />
+                 </div>
+               </div>
+             </CardContent>
+             </div>
+           </Card>
         </div>
       </div>
     </section>;
