@@ -21,32 +21,39 @@ const ContactSection = () => {
           {/* Contact Info */}
           <div className="space-y-6">
             <Card className="border-primary/10">
-              <CardHeader className="text-center">
+              <CardHeader>
                 <CardTitle className="text-xl text-foreground">Get in Touch</CardTitle>
                 <CardDescription>
                   Available for research collaborations and consulting opportunities
                 </CardDescription>
               </CardHeader>
-              <CardContent className="text-center">
-                <div className="flex items-center justify-center gap-8">
-                  <div className="flex items-center gap-2">
-                    <div className="p-2 rounded-lg bg-primary/10">
-                      <Mail className="w-5 h-5 text-primary" />
-                    </div>
+              <CardContent className="space-y-4">
+                <div className="flex items-center gap-3">
+                  <div className="p-2 rounded-lg bg-primary/10">
+                    <Mail className="w-5 h-5 text-primary" />
+                  </div>
+                  <div>
+                    
                     <p className="text-sm text-muted-foreground">alex.chen@university.edu</p>
                   </div>
-                  
-                  <div className="flex items-center gap-2">
-                    <div className="p-2 rounded-lg bg-primary/10">
-                      <MapPin className="w-5 h-5 text-primary" />
-                    </div>
+                </div>
+                
+                <div className="flex items-center gap-3">
+                  <div className="p-2 rounded-lg bg-primary/10">
+                    
+                  </div>
+                  <div>
+                    <p className="font-medium text-foreground">Location</p>
                     <p className="text-sm text-muted-foreground">Stanford, CA</p>
                   </div>
-                  
-                  <div className="flex items-center gap-2">
-                    <div className="p-2 rounded-lg bg-primary/10">
-                      <Calendar className="w-5 h-5 text-primary" />
-                    </div>
+                </div>
+                
+                <div className="flex items-center gap-3">
+                  <div className="p-2 rounded-lg bg-primary/10">
+                    <Calendar className="w-5 h-5 text-primary" />
+                  </div>
+                  <div>
+                    <p className="font-medium text-foreground">Office Hours</p>
                     <p className="text-sm text-muted-foreground">Tue/Thu 2-4 PM</p>
                   </div>
                 </div>
