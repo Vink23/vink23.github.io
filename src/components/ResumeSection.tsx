@@ -101,46 +101,6 @@ const ResumeSection = () => {
                   </ul>
                 </CardContent>
               </Card>
-
-              <Card className="border-l-4 border-tech-accent">
-                <CardHeader>
-                  <div className="flex justify-between items-start">
-                    <div>
-                      <CardTitle className="text-lg">Machine Learning Engineer</CardTitle>
-                      <p className="text-muted-foreground">DeepMind Technologies</p>
-                    </div>
-                    <Badge variant="secondary">2015 - 2017</Badge>
-                  </div>
-                </CardHeader>
-                <CardContent>
-                  <ul className="list-disc list-inside space-y-2 text-muted-foreground">
-                    <li>Implemented and optimized deep learning models for computer vision and natural language processing</li>
-                    <li>Contributed to reinforcement learning research projects with focus on game-playing AI</li>
-                    <li>Developed distributed training systems for large-scale neural networks</li>
-                    <li>Published 3 papers on attention mechanisms and transformer architectures</li>
-                  </ul>
-                </CardContent>
-              </Card>
-
-              <Card className="border-l-4 border-tech-accent">
-                <CardHeader>
-                  <div className="flex justify-between items-start">
-                    <div>
-                      <CardTitle className="text-lg">Research Assistant</CardTitle>
-                      <p className="text-muted-foreground">MIT Computer Science and Artificial Intelligence Laboratory</p>
-                    </div>
-                    <Badge variant="secondary">2013 - 2015</Badge>
-                  </div>
-                </CardHeader>
-                <CardContent>
-                  <ul className="list-disc list-inside space-y-2 text-muted-foreground">
-                    <li>Assisted in developing novel neural network architectures for pattern recognition</li>
-                    <li>Conducted experiments on unsupervised learning and feature extraction methods</li>
-                    <li>Co-authored 5 research papers on machine learning and computational neuroscience</li>
-                    <li>Maintained laboratory computing infrastructure and data processing pipelines</li>
-                  </ul>
-                </CardContent>
-              </Card>
             </div>
           </section>
 
@@ -170,7 +130,7 @@ const ResumeSection = () => {
                   <div className="flex justify-between items-start">
                     <div>
                       <CardTitle className="text-lg">B.S. in Computational Neuroscience</CardTitle>
-                      <p className="text-muted-foreground">University of California, Berkeley</p>
+                      <p className="text-muted-foreground">Loyola University Chicago</p>
                       
                     </div>
                     <Badge variant="outline">2022</Badge>
@@ -186,45 +146,25 @@ const ResumeSection = () => {
               Technical Skills
             </h5>
             
-            <div className="grid md:grid-cols-3 gap-6">
+            <div className="grid md:grid-cols-2 gap-6">
               <Card>
                 <CardHeader>
-                  <CardTitle className="text-lg">AI/ML Domains</CardTitle>
+                  <CardTitle className="text-lg">AI & Machine Learning</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <div className="flex flex-wrap gap-2">
-                    <Badge variant="secondary">Natural Language Processing</Badge>
-                    <Badge variant="secondary">Computer Vision</Badge>
-                    <Badge variant="secondary">Generative AI</Badge>
-                    <Badge variant="secondary">Foundation Models</Badge>
-                    <Badge variant="secondary">Retrieval-Augmented Generation</Badge>
+                    <Badge variant="secondary">Spiking Neural Networks</Badge>
+                    <Badge variant="secondary">Neuromorphic Computing</Badge>
                     <Badge variant="secondary">Deep Learning</Badge>
+                    <Badge variant="secondary">Reinforcement Learning</Badge>
+                    <Badge variant="secondary">Hebbian Learning</Badge>
                   </div>
                 </CardContent>
               </Card>
 
               <Card>
                 <CardHeader>
-                  <CardTitle className="text-lg">Libraries & Frameworks</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <div className="flex flex-wrap gap-2">
-                    <Badge variant="secondary">PyTorch</Badge>
-                    <Badge variant="secondary">TensorFlow</Badge>
-                    <Badge variant="secondary">Scikit-learn</Badge>
-                    <Badge variant="secondary">Pandas</Badge>
-                    <Badge variant="secondary">NumPy</Badge>
-                    <Badge variant="secondary">OpenCV</Badge>
-                    <Badge variant="secondary">Hugging Face</Badge>
-                    <Badge variant="secondary">Vector Databases (FAISS)</Badge>
-                    <Badge variant="secondary">SentenceTransformers</Badge>
-                  </div>
-                </CardContent>
-              </Card>
-
-              <Card>
-                <CardHeader>
-                  <CardTitle className="text-lg">Programming & Platforms</CardTitle>
+                  <CardTitle className="text-lg">Programming & Tools</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <div className="flex flex-wrap gap-2">
