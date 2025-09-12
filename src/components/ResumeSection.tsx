@@ -206,11 +206,12 @@ const ResumeSection = () => {
                 </CardHeader>
                 <CardContent>
                   <div className="flex flex-wrap gap-2">
-                    <Badge variant="secondary">Spiking Neural Networks</Badge>
-                    <Badge variant="secondary">Neuromorphic Computing</Badge>
+                    <Badge variant="secondary">Natural Language Processing</Badge>
+                    <Badge variant="secondary">Computer Vision</Badge>
+                    <Badge variant="secondary">Generative AI</Badge>
+                    <Badge variant="secondary">Foundation Models</Badge>
+                    <Badge variant="secondary">Retrieval-Augmented Generation</Badge>
                     <Badge variant="secondary">Deep Learning</Badge>
-                    <Badge variant="secondary">Reinforcement Learning</Badge>
-                    <Badge variant="secondary">Hebbian Learning</Badge>
                   </div>
                 </CardContent>
               </Card>
