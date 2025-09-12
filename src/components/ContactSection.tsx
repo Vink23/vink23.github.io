@@ -12,7 +12,7 @@ const ContactSection = () => {
             Let's Collaborate
           </h2>
           
-          <Card className="border-border/5 max-w-4xl mx-auto bg-card/50 backdrop-blur-sm">
+          <Card className="border-border/[0.02] max-w-4xl mx-auto bg-card/50 backdrop-blur-sm">
             <CardHeader className="text-center">
               <CardTitle className="text-xl text-foreground">Get in Touch</CardTitle>
               <CardDescription>
