@@ -4,14 +4,7 @@ import { Mail, Phone, MapPin, Globe, Github, Linkedin } from "lucide-react";
 const ResumeSection = () => {
   return <section id="resume-snapshot" className="py-20 bg-gradient-section">
       <div className="max-w-6xl mx-auto px-6">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-            Resume
-          </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Professional experience, education, and technical expertise in neuro-inspired AI
-          </p>
-        </div>
+        
 
         <div className="bg-background rounded-lg shadow-lg p-8">
           {/* Header */}
@@ -32,10 +25,7 @@ const ResumeSection = () => {
                 <MapPin className="w-4 h-4" />
                 San Francisco, CA
               </div>
-              <div className="flex items-center gap-1">
-                <Globe className="w-4 h-4" />
-                alexchen.ai
-              </div>
+              
             </div>
             
             <div className="flex justify-center gap-4 mt-4">
