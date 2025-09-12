@@ -2,31 +2,25 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Github, ExternalLink, Star } from "lucide-react";
-
 const ProjectsSection = () => {
-  const projects = [
-    {
-      title: "SurgiRAG",
-      description: "An end-to-end surgical QA system using a fine-tuned BioBERT retriever and LoRA-adapted LLaMA-3 to generate factually grounded answers, outperforming baselines by over 40 percentage points on faithfulness metrics.",
-      tech: ["Python", "PyTorch", "HuggingFace", "PEFT (LoRA)", "FAISS", "SentenceTransformers"],
-      stars: "2.3k",
-      status: "Active",
-      types: ["Framework", "Medical AI"],
-      highlights: ["Domain-Adapted Retriever", "Cross-Encoder Reranking", "LoRA Fine-Tuning", "LLM-as-a-Judge"]
-    },
-    {
-      title: "LangGraph Analytics",
-      description: "Real-time analytics platform for knowledge graphs with natural language querying and interactive visualization of complex relationships.",
-      tech: ["React", "D3.js", "Neo4j", "FastAPI"],
-      stars: "1.8k",
-      status: "Active",
-      type: "Platform",
-      highlights: ["NL Queries", "Real-time", "Interactive Viz"]
-    }
-  ];
-
-  return (
-    <section className="py-20 bg-gradient-section">
+  const projects = [{
+    title: "SurgiRAG",
+    description: "An end-to-end surgical QA system using a fine-tuned BioBERT retriever and LoRA-adapted LLaMA-3 to generate factually grounded answers, outperforming baselines by over 40 percentage points on faithfulness metrics.",
+    tech: ["Python", "PyTorch", "HuggingFace", "PEFT (LoRA)", "FAISS", "SentenceTransformers"],
+    stars: "2.3k",
+    status: "Active",
+    types: ["Framework", "Medical AI"],
+    highlights: ["Domain-Adapted Retriever", "Cross-Encoder Reranking", "LoRA Fine-Tuning", "LLM-as-a-Judge"]
+  }, {
+    title: "LangGraph Analytics",
+    description: "Real-time analytics platform for knowledge graphs with natural language querying and interactive visualization of complex relationships.",
+    tech: ["React", "D3.js", "Neo4j", "FastAPI"],
+    stars: "1.8k",
+    status: "Active",
+    type: "Platform",
+    highlights: ["NL Queries", "Real-time", "Interactive Viz"]
+  }];
+  return <section className="py-20 bg-gradient-section">
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
@@ -38,11 +32,7 @@ const ProjectsSection = () => {
         </div>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
-          {projects.map((project, index) => (
-            <Card 
-              key={index} 
-              className="group hover:shadow-neural transition-all duration-300 bg-gradient-card border-primary/10 h-full"
-            >
+          {projects.map((project, index) => <Card key={index} className="group hover:shadow-neural transition-all duration-300 bg-gradient-card border-primary/10 h-full">
               <CardHeader>
                 <div className="flex items-start justify-between mb-4">
                   <div>
@@ -50,28 +40,13 @@ const ProjectsSection = () => {
                       {project.title}
                     </CardTitle>
                     <div className="flex items-center gap-3">
-                      {(project.types || [project.type]).map((type, typeIdx) => (
-                        <Badge 
-                          key={typeIdx}
-                          variant="secondary"
-                          className="bg-primary/10 text-primary"
-                        >
+                      {(project.types || [project.type]).map((type, typeIdx) => <Badge key={typeIdx} variant="secondary" className="bg-primary/10 text-primary">
                           {type}
-                        </Badge>
-                      ))}
-                      <div className="flex items-center gap-1 text-sm text-muted-foreground">
-                        <Star className="w-4 h-4 fill-current" />
-                        {project.stars}
-                      </div>
+                        </Badge>)}
+                      
                     </div>
                   </div>
-                  <Badge 
-                    variant={project.status === 'Active' ? 'default' : 'secondary'}
-                    className={project.status === 'Active' 
-                      ? 'bg-tech-accent/20 text-tech-accent' 
-                      : ''
-                    }
-                  >
+                  <Badge variant={project.status === 'Active' ? 'default' : 'secondary'} className={project.status === 'Active' ? 'bg-tech-accent/20 text-tech-accent' : ''}>
                     {project.status}
                   </Badge>
                 </div>
@@ -86,30 +61,18 @@ const ProjectsSection = () => {
                   <div>
                     <h4 className="text-sm font-medium text-foreground mb-2">Key Features</h4>
                     <div className="flex flex-wrap gap-2">
-                      {project.highlights.map((highlight, idx) => (
-                        <Badge 
-                          key={idx}
-                          variant="outline"
-                          className="text-xs border-tech-accent/30 text-tech-accent"
-                        >
+                      {project.highlights.map((highlight, idx) => <Badge key={idx} variant="outline" className="text-xs border-tech-accent/30 text-tech-accent">
                           {highlight}
-                        </Badge>
-                      ))}
+                        </Badge>)}
                     </div>
                   </div>
                   
                   <div>
                     <h4 className="text-sm font-medium text-foreground mb-2">Technologies</h4>
                     <div className="flex flex-wrap gap-2">
-                      {project.tech.map((tech, idx) => (
-                        <Badge 
-                          key={idx}
-                          variant="secondary"
-                          className="text-xs bg-muted/50"
-                        >
+                      {project.tech.map((tech, idx) => <Badge key={idx} variant="secondary" className="text-xs bg-muted/50">
                           {tech}
-                        </Badge>
-                      ))}
+                        </Badge>)}
                     </div>
                   </div>
                 </div>
@@ -125,8 +88,7 @@ const ProjectsSection = () => {
                   </Button>
                 </div>
               </CardContent>
-            </Card>
-          ))}
+            </Card>)}
         </div>
         
         <div className="text-center mt-12">
@@ -136,8 +98,6 @@ const ProjectsSection = () => {
           </Button>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default ProjectsSection;
