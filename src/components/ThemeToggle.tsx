@@ -14,7 +14,7 @@ const ThemeToggle = () => {
 
   if (!mounted) {
     return (
-      <Button variant="ghost" size="icon" className="fixed top-4 right-4 z-[1001]">
+      <Button variant="ghost" size="icon" className="absolute top-4 right-4 z-50">
         <Moon className="h-5 w-5" />
       </Button>
     );
@@ -27,7 +27,7 @@ const ThemeToggle = () => {
           variant="ghost"
           size="icon"
           onClick={() => setTheme(theme === "light" ? "dark" : "light")}
-          className="fixed top-4 right-4 z-[1001] bg-background/20 backdrop-blur-sm border border-border/20 hover:bg-background/40"
+          className="absolute top-4 right-4 z-50 bg-background/20 backdrop-blur-sm border border-border/20 hover:bg-background/40"
         >
           {theme === "light" ? (
             <Moon className="h-5 w-5 text-foreground" />
