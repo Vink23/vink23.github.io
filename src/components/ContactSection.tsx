@@ -4,10 +4,8 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { Mail, MapPin, Phone, Calendar } from "lucide-react";
-
 const ContactSection = () => {
-  return (
-    <section className="py-20 bg-background">
+  return <section className="py-20 bg-background">
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
@@ -81,62 +79,12 @@ const ContactSection = () => {
           {/* Contact Form */}
           <div className="lg:col-span-2">
             <Card className="border-primary/10">
-              <CardHeader>
-                <CardTitle className="text-2xl text-foreground">Send a Message</CardTitle>
-                <CardDescription>
-                  I typically respond within 24-48 hours
-                </CardDescription>
-              </CardHeader>
-              <CardContent className="space-y-6">
-                <div className="grid md:grid-cols-2 gap-4">
-                  <div className="space-y-2">
-                    <Label htmlFor="name" className="text-foreground">Name</Label>
-                    <Input 
-                      id="name" 
-                      placeholder="Your full name"
-                      className="border-primary/20 focus:border-primary"
-                    />
-                  </div>
-                  <div className="space-y-2">
-                    <Label htmlFor="email" className="text-foreground">Email</Label>
-                    <Input 
-                      id="email" 
-                      type="email" 
-                      placeholder="your.email@example.com"
-                      className="border-primary/20 focus:border-primary"
-                    />
-                  </div>
-                </div>
-                
-                <div className="space-y-2">
-                  <Label htmlFor="subject" className="text-foreground">Subject</Label>
-                  <Input 
-                    id="subject" 
-                    placeholder="Research collaboration, speaking opportunity, etc."
-                    className="border-primary/20 focus:border-primary"
-                  />
-                </div>
-                
-                <div className="space-y-2">
-                  <Label htmlFor="message" className="text-foreground">Message</Label>
-                  <Textarea 
-                    id="message" 
-                    placeholder="Tell me more about your project or inquiry..."
-                    rows={6}
-                    className="border-primary/20 focus:border-primary resize-none"
-                  />
-                </div>
-                
-                <Button variant="hero" size="lg" className="w-full">
-                  Send Message
-                </Button>
-              </CardContent>
+              
+              
             </Card>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default ContactSection;

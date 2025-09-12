@@ -4,14 +4,7 @@ import { Mail, Phone, MapPin, Globe, Github, Linkedin } from "lucide-react";
 const ResumeSection = () => {
   return <section id="resume-snapshot" className="py-20 bg-gradient-section">
       <div className="max-w-6xl mx-auto px-6">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-            Resume
-          </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Professional experience, education, and technical expertise in neuro-inspired AI
-          </p>
-        </div>
+        
 
         <div className="bg-background rounded-lg shadow-lg p-8">
           {/* Header */}
@@ -139,7 +132,7 @@ const ResumeSection = () => {
                   <div className="flex justify-between items-start">
                     <div>
                       <CardTitle className="text-lg">B.S. in Computational Neuroscience</CardTitle>
-                      <p className="text-muted-foreground">Loyola University Chicago</p>
+                      <p className="text-muted-foreground">University of California, Berkeley</p>
                       
                     </div>
                     <Badge variant="outline">2022</Badge>
@@ -214,45 +207,7 @@ const ResumeSection = () => {
           </section>
 
           {/* Awards */}
-          <section>
-            <h5 className="text-xl font-bold text-foreground mb-4 border-l-4 border-primary pl-4">
-              Awards & Recognition
-            </h5>
-            
-            <div className="grid md:grid-cols-2 gap-4">
-              <div className="flex items-center gap-3">
-                <div className="w-2 h-2 bg-primary rounded-full"></div>
-                <div>
-                  <p className="font-medium">NSF CAREER Award</p>
-                  <p className="text-sm text-muted-foreground">2022</p>
-                </div>
-              </div>
-              
-              <div className="flex items-center gap-3">
-                <div className="w-2 h-2 bg-primary rounded-full"></div>
-                <div>
-                  <p className="font-medium">IEEE Neural Networks Pioneer Award</p>
-                  <p className="text-sm text-muted-foreground">2021</p>
-                </div>
-              </div>
-              
-              <div className="flex items-center gap-3">
-                <div className="w-2 h-2 bg-primary rounded-full"></div>
-                <div>
-                  <p className="font-medium">MIT Technology Review Innovator Under 35</p>
-                  <p className="text-sm text-muted-foreground">2020</p>
-                </div>
-              </div>
-              
-              <div className="flex items-center gap-3">
-                <div className="w-2 h-2 bg-primary rounded-full"></div>
-                <div>
-                  <p className="font-medium">Google Faculty Research Award</p>
-                  <p className="text-sm text-muted-foreground">2019</p>
-                </div>
-              </div>
-            </div>
-          </section>
+          
         </div>
       </div>
     </section>;
