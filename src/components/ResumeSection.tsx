@@ -16,7 +16,7 @@ const ResumeSection = () => {
         <div className="bg-background rounded-lg shadow-lg p-8">
           {/* Header */}
           <header id="resume-anchor" className="text-center mb-8 border-b pb-6">
-            <h3 className="text-3xl font-bold text-foreground mb-2">Dr. Alex Chen</h3>
+            <h3 className="text-3xl font-bold text-foreground mb-2">Vinith Kuruppu</h3>
             <h4 className="text-lg text-muted-foreground mb-4">AI Researcher & Machine Learning Scientist</h4>
             
             <div className="flex flex-wrap justify-center gap-4 text-sm text-muted-foreground">
