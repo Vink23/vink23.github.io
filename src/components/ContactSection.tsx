@@ -15,9 +15,6 @@ const ContactSection = () => {
           <Card className="border-border/[0.02] max-w-4xl mx-auto bg-card/50 backdrop-blur-sm">
             <CardHeader className="text-center">
               <CardTitle className="text-xl text-foreground">Get in Touch</CardTitle>
-              <CardDescription>
-                Available for research collaborations and consulting opportunities
-              </CardDescription>
             </CardHeader>
             <CardContent className="text-center">
               <div className="flex items-center justify-center gap-8">
