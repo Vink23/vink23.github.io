@@ -446,26 +446,26 @@ export const NeuralNetwork = ({
               </div>
               
               {/* Detailed Statistics */}
-              <div className="space-y-1 text-xs font-mono">
-                <div className="flex justify-between">
-                  <span className="text-muted-foreground">Active Neurons:</span>
-                  <span className="text-accent font-semibold">{networkStats.activeNeurons}/{nodeCount}</span>
+                <div className="space-y-1 text-xs font-mono">
+                  <div className="flex justify-between">
+                    <span className="text-muted-foreground">Active Neurons:</span>
+                    <span className="text-accent-foreground font-semibold">{networkStats.activeNeurons}/{nodeCount}</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-muted-foreground">Synapses:</span>
+                    <span className="text-secondary-foreground font-semibold">{networkStats.totalConnections}</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-muted-foreground">Network Activity:</span>
+                    <span className="text-primary-foreground font-semibold">{networkStats.synapticActivity}</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-muted-foreground">Density:</span>
+                    <span className="text-foreground font-semibold">
+                      {Math.round((networkStats.totalConnections / (nodeCount * (nodeCount - 1))) * 1000) / 10}%
+                    </span>
+                  </div>
                 </div>
-                <div className="flex justify-between">
-                  <span className="text-muted-foreground">Synapses:</span>
-                  <span className="text-secondary font-semibold">{networkStats.totalConnections}</span>
-                </div>
-                <div className="flex justify-between">
-                  <span className="text-muted-foreground">Network Activity:</span>
-                  <span className="text-primary font-semibold">{networkStats.synapticActivity}</span>
-                </div>
-                <div className="flex justify-between">
-                  <span className="text-muted-foreground">Density:</span>
-                  <span className="text-foreground font-semibold">
-                    {Math.round((networkStats.totalConnections / (nodeCount * (nodeCount - 1))) * 1000) / 10}%
-                  </span>
-                </div>
-              </div>
             </div>
             
             {/* Neuron Type Legend */}
