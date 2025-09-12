@@ -12,13 +12,13 @@ const ProjectsSection = () => {
     types: ["Framework", "Medical AI"],
     highlights: ["Domain-Adapted Retriever", "Cross-Encoder Reranking", "LoRA Fine-Tuning", "LLM-as-a-Judge"]
   }, {
-    title: "LangGraph Analytics",
+    title: "PathoVision",
     description: "Real-time analytics platform for knowledge graphs with natural language querying and interactive visualization of complex relationships.",
-    tech: ["React", "D3.js", "Neo4j", "FastAPI"],
+    tech: ["Python", "PyTorch", "OpenCV", "DINOv2", "Scikit-learn"],
     stars: "1.8k",
     status: "Active",
-    type: "Platform",
-    highlights: ["NL Queries", "Real-time", "Interactive Viz"]
+    types: ["Computer Vision", "Medical AI"],
+    highlights: ["DINOv2", "Grid Search CV", "Blob Detection", "PCA"]
   }];
   return <section className="py-20 bg-gradient-section">
       <div className="max-w-6xl mx-auto px-6">
@@ -40,7 +40,7 @@ const ProjectsSection = () => {
                       {project.title}
                     </CardTitle>
                     <div className="flex items-center gap-3">
-                      {(project.types || [project.type]).map((type, typeIdx) => <Badge key={typeIdx} variant="secondary" className="bg-primary/10 text-primary">
+                      {project.types.map((type, typeIdx) => <Badge key={typeIdx} variant="secondary" className="bg-primary/10 text-primary">
                           {type}
                         </Badge>)}
                       
