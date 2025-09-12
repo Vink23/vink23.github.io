@@ -405,14 +405,14 @@ export const NeuralNetwork = ({
         })}
       </svg>
       
-      {/* Neural Activity Toggle - Portaled to body to ensure clickability above all layers */}
+      {/* Neural Activity Toggle - Fixed positioning that stays during scroll */}
       {typeof document !== "undefined" && createPortal(
-        <div className="fixed bottom-8 right-8 z-[1000] pointer-events-auto">
+        <div className="fixed bottom-8 right-8 z-[1000]">
           {!isStatsExpanded ? (
             /* Collapsed Button */
             <button
               onClick={() => setIsStatsExpanded(true)}
-              className="p-3 bg-card/90 backdrop-blur-sm rounded-lg border border-border shadow-neural hover:shadow-lg neural-transition hover-neural-glow"
+              className="p-3 bg-card/90 backdrop-blur-sm rounded-lg border border-border shadow-neural hover:shadow-lg neural-transition hover-neural-glow pointer-events-auto"
             >
               <div className="flex items-center gap-2">
                 <div className="relative">
