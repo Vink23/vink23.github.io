@@ -66,18 +66,19 @@ const ResumeSection = () => {
                 <CardHeader>
                   <div className="flex justify-between items-start">
                     <div>
-                      <CardTitle className="text-lg">Senior AI Researcher</CardTitle>
-                      <p className="text-muted-foreground">NeuroTech Research Institute</p>
+                      <CardTitle className="text-lg">Graduate Student Instructor</CardTitle>
+                      <p className="text-muted-foreground">University of California, Berkeley</p>
                     </div>
-                    <Badge variant="secondary">2020 - Present</Badge>
+                    <Badge variant="secondary">Jan 2025 - Present</Badge>
                   </div>
                 </CardHeader>
                 <CardContent>
                   <ul className="list-disc list-inside space-y-2 text-muted-foreground">
-                    <li>Led development of novel spiking neural network architectures achieving 40% energy efficiency improvement</li>
-                    <li>Published 15+ papers in top-tier conferences (NeurIPS, ICML, ICLR) on neuromorphic computing</li>
-                    <li>Managed team of 6 researchers focusing on brain-inspired AI systems</li>
-                    <li>Secured $2.5M in research funding from NSF and industry partnerships</li>
+                    <li>Mentored graduate students on experimental design and causal inference, raising proposal quality by 20% as
+                    measured by rubric scores.</li>
+                    <li>Guided 80+ master’s students through research design and ML applications, improving project quality and raising
+                    average project scores by 12%</li>
+                    <li>Delivered feedback on 40+ research projects, strengthening methodological rigor</li>
                   </ul>
                 </CardContent>
               </Card>
@@ -98,46 +99,6 @@ const ResumeSection = () => {
                     <li>Collaborated with neuroscientists to validate computational models against biological data</li>
                     <li>Created open-source framework for spiking neural network simulation (500+ GitHub stars)</li>
                     <li>Mentored 4 PhD students and 8 undergraduate researchers</li>
-                  </ul>
-                </CardContent>
-              </Card>
-
-              <Card className="border-l-4 border-tech-accent">
-                <CardHeader>
-                  <div className="flex justify-between items-start">
-                    <div>
-                      <CardTitle className="text-lg">Machine Learning Engineer</CardTitle>
-                      <p className="text-muted-foreground">TechCorp AI Division</p>
-                    </div>
-                    <Badge variant="secondary">2015 - 2017</Badge>
-                  </div>
-                </CardHeader>
-                <CardContent>
-                  <ul className="list-disc list-inside space-y-2 text-muted-foreground">
-                    <li>Implemented production-scale deep learning models for computer vision applications</li>
-                    <li>Optimized neural network architectures resulting in 30% reduction in inference time</li>
-                    <li>Built MLOps pipelines for automated model training and deployment</li>
-                    <li>Collaborated with product teams to integrate AI features into consumer applications</li>
-                  </ul>
-                </CardContent>
-              </Card>
-
-              <Card className="border-l-4 border-tech-accent">
-                <CardHeader>
-                  <div className="flex justify-between items-start">
-                    <div>
-                      <CardTitle className="text-lg">Research Intern</CardTitle>
-                      <p className="text-muted-foreground">Google DeepMind</p>
-                    </div>
-                    <Badge variant="secondary">Summer 2014</Badge>
-                  </div>
-                </CardHeader>
-                <CardContent>
-                  <ul className="list-disc list-inside space-y-2 text-muted-foreground">
-                    <li>Conducted research on attention mechanisms in transformer architectures</li>
-                    <li>Contributed to internal research on neural machine translation improvements</li>
-                    <li>Presented findings to senior research team and published internal technical report</li>
-                    <li>Gained experience with large-scale distributed training systems</li>
                   </ul>
                 </CardContent>
               </Card>
@@ -170,7 +131,7 @@ const ResumeSection = () => {
                   <div className="flex justify-between items-start">
                     <div>
                       <CardTitle className="text-lg">B.S. in Computational Neuroscience</CardTitle>
-                      <p className="text-muted-foreground">Loyola University Chicago</p>
+                      <p className="text-muted-foreground">University of California, Berkeley</p>
                       
                     </div>
                     <Badge variant="outline">2022</Badge>
