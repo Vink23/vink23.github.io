@@ -6,7 +6,7 @@ import { Github, ExternalLink, Star } from "lucide-react";
 const ProjectsSection = () => {
   const projects = [
     {
-      title: "NeuroFlow",
+      title: "SurgiRAG",
       description: "An open-source framework for building and deploying neural network architectures with automatic optimization and distributed training capabilities.",
       tech: ["Python", "PyTorch", "Docker", "Kubernetes"],
       stars: "2.3k",
