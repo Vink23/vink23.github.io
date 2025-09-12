@@ -109,10 +109,10 @@ const HeroSection = () => {
           </div>
           
           <div className="flex gap-6 justify-center pt-6">
-            <a href="#" className="text-primary-foreground/70 hover:text-primary-foreground transition-smooth">
+            <a href="https://github.com/Vink23" className="text-primary-foreground/70 hover:text-primary-foreground transition-smooth">
               <Github className="w-6 h-6" />
             </a>
-            <a href="#" className="text-primary-foreground/70 hover:text-primary-foreground transition-smooth">
+            <a href="https://www.linkedin.com/in/vinithkuruppu/" className="text-primary-foreground/70 hover:text-primary-foreground transition-smooth">
               <Linkedin className="w-6 h-6" />
             </a>
             <a href="#" className="text-primary-foreground/70 hover:text-primary-foreground transition-smooth">
