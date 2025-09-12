@@ -101,6 +101,46 @@ const ResumeSection = () => {
                   </ul>
                 </CardContent>
               </Card>
+
+              <Card className="border-l-4 border-tech-accent">
+                <CardHeader>
+                  <div className="flex justify-between items-start">
+                    <div>
+                      <CardTitle className="text-lg">Machine Learning Engineer</CardTitle>
+                      <p className="text-muted-foreground">TechCorp AI Division</p>
+                    </div>
+                    <Badge variant="secondary">2015 - 2017</Badge>
+                  </div>
+                </CardHeader>
+                <CardContent>
+                  <ul className="list-disc list-inside space-y-2 text-muted-foreground">
+                    <li>Implemented production-scale deep learning models for computer vision applications</li>
+                    <li>Optimized neural network architectures resulting in 30% reduction in inference time</li>
+                    <li>Built MLOps pipelines for automated model training and deployment</li>
+                    <li>Collaborated with product teams to integrate AI features into consumer applications</li>
+                  </ul>
+                </CardContent>
+              </Card>
+
+              <Card className="border-l-4 border-tech-accent">
+                <CardHeader>
+                  <div className="flex justify-between items-start">
+                    <div>
+                      <CardTitle className="text-lg">Research Intern</CardTitle>
+                      <p className="text-muted-foreground">Google DeepMind</p>
+                    </div>
+                    <Badge variant="secondary">Summer 2014</Badge>
+                  </div>
+                </CardHeader>
+                <CardContent>
+                  <ul className="list-disc list-inside space-y-2 text-muted-foreground">
+                    <li>Conducted research on attention mechanisms in transformer architectures</li>
+                    <li>Contributed to internal research on neural machine translation improvements</li>
+                    <li>Presented findings to senior research team and published internal technical report</li>
+                    <li>Gained experience with large-scale distributed training systems</li>
+                  </ul>
+                </CardContent>
+              </Card>
             </div>
           </section>
 
