@@ -124,9 +124,9 @@ const ResumeSection = () => {
                     <li>Led end-to-end FDA-compliant validation for biosensor trials, achieving 100% pass on internal QA audits and
                     enabling accurate real-time health monitoring</li>
                     <li>Analyzed high-frequency signals to prioritize design changes for a $12B product line, shortening decision cycles by
-                    20% and increasing signal-quality pass rateli>
-                    <li>Diagnosed and resolved defects in proprietary study software, raising automated test coverage from 42% to 78%
-                    and accelerating release cadence by 50%</li>
+                     20% and increasing signal-quality pass rate</li>
+                     <li>Diagnosed and resolved defects in proprietary study software, raising automated test coverage from 42% to 78%
+                     and accelerating release cadence by 50%</li>
                   </ul>
                 </CardContent>
               </Card>
