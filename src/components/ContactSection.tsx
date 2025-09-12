@@ -60,20 +60,7 @@ const ContactSection = () => {
               </CardContent>
             </Card>
             
-            <Card className="border-primary/10 bg-gradient-card">
-              <CardHeader>
-                <CardTitle className="text-xl text-foreground">Research Interests</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <ul className="space-y-2 text-sm text-muted-foreground">
-                  <li>• Collaborative AI research projects</li>
-                  <li>• PhD student mentorship</li>
-                  <li>• Industry partnerships</li>
-                  <li>• Conference speaking</li>
-                  <li>• Technical consulting</li>
-                </ul>
-              </CardContent>
-            </Card>
+            
           </div>
         </div>
       </div>
