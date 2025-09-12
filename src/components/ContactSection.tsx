@@ -29,25 +29,16 @@ const ContactSection = () => {
               </CardHeader>
               <CardContent className="text-center">
                 <div className="flex items-center justify-center gap-8">
-                  <div className="flex items-center gap-2">
-                    <div className="p-2 rounded-lg bg-primary/10">
-                      <Mail className="w-5 h-5 text-primary" />
-                    </div>
-                    <p className="text-sm text-muted-foreground">alex.chen@university.edu</p>
+                  <div className="p-2 rounded-lg bg-primary/10">
+                    <Mail className="w-5 h-5 text-primary" />
                   </div>
                   
-                  <div className="flex items-center gap-2">
-                    <div className="p-2 rounded-lg bg-primary/10">
-                      <MapPin className="w-5 h-5 text-primary" />
-                    </div>
-                    <p className="text-sm text-muted-foreground">Stanford, CA</p>
+                  <div className="p-2 rounded-lg bg-primary/10">
+                    <MapPin className="w-5 h-5 text-primary" />
                   </div>
                   
-                  <div className="flex items-center gap-2">
-                    <div className="p-2 rounded-lg bg-primary/10">
-                      <Calendar className="w-5 h-5 text-primary" />
-                    </div>
-                    <p className="text-sm text-muted-foreground">Tue/Thu 2-4 PM</p>
+                  <div className="p-2 rounded-lg bg-primary/10">
+                    <Calendar className="w-5 h-5 text-primary" />
                   </div>
                 </div>
               </CardContent>
