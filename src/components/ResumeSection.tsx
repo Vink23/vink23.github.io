@@ -4,7 +4,14 @@ import { Mail, Phone, MapPin, Globe, Github, Linkedin } from "lucide-react";
 const ResumeSection = () => {
   return <section id="resume-snapshot" className="py-20 bg-gradient-section">
       <div className="max-w-6xl mx-auto px-6">
-        
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+            Resume
+          </h2>
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+            Professional experience, education, and technical expertise in neuro-inspired AI
+          </p>
+        </div>
 
         <div className="bg-background rounded-lg shadow-lg p-8">
           {/* Header */}
@@ -132,7 +139,7 @@ const ResumeSection = () => {
                   <div className="flex justify-between items-start">
                     <div>
                       <CardTitle className="text-lg">B.S. in Computational Neuroscience</CardTitle>
-                      <p className="text-muted-foreground">University of California, Berkeley</p>
+                      <p className="text-muted-foreground">Loyola University Chicago</p>
                       
                     </div>
                     <Badge variant="outline">2022</Badge>
