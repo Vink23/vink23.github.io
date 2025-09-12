@@ -67,7 +67,7 @@ const ResumeSection = () => {
                   <div className="flex justify-between items-start">
                     <div>
                       <CardTitle className="text-lg">Graduate Student Instructor</CardTitle>
-                      <p className="text-muted-foreground">University of California, Berkeley</p>
+                      <p className="text-muted-foreground italic">University of California, Berkeley</p>
                     </div>
                     <Badge variant="secondary">Jan 2025 - Present</Badge>
                   </div>
@@ -88,7 +88,7 @@ const ResumeSection = () => {
                   <div className="flex justify-between items-start">
                     <div>
                       <CardTitle className="text-lg">AI/ML Research Associate</CardTitle>
-                      <p className="text-muted-foreground">RAND Corporation</p>
+                      <p className="text-muted-foreground italic">RAND Corporation</p>
                     </div>
                     <Badge variant="secondary">May 2024 - May 2025</Badge>
                   </div>
@@ -112,7 +112,7 @@ const ResumeSection = () => {
                   <div className="flex justify-between items-start">
                     <div>
                       <CardTitle className="text-lg">Research Data Scienctist</CardTitle>
-                      <p className="text-muted-foreground">Exponent Incorporated</p>
+                      <p className="text-muted-foreground italic">Exponent Incorporated</p>
                     </div>
                     <Badge variant="secondary">July 2022 - May 2024</Badge>
                   </div>
@@ -136,7 +136,7 @@ const ResumeSection = () => {
                   <div className="flex justify-between items-start">
                     <div>
                       <CardTitle className="text-lg">Computer Vision Research Assistant</CardTitle>
-                      <p className="text-muted-foreground">Loyola University Chicago</p>
+                      <p className="text-muted-foreground italic">Loyola University Chicago</p>
                     </div>
                     <Badge variant="secondary">Jan 2020 - June 2022</Badge>
                   </div>
