@@ -11,41 +11,30 @@ const ContactSection = () => {
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
             Let's Collaborate
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Interested in research collaboration, speaking opportunities, or consulting? 
-            I'd love to hear from you.
-          </p>
-        </div>
-        
-        <div className="grid lg:grid-cols-1 gap-8">
-          {/* Contact Info */}
-          <div className="space-y-6">
-            <Card className="border-primary/10">
-              <CardHeader className="text-center">
-                <CardTitle className="text-xl text-foreground">Get in Touch</CardTitle>
-                <CardDescription>
-                  Available for research collaborations and consulting opportunities
-                </CardDescription>
-              </CardHeader>
-              <CardContent className="text-center">
-                <div className="flex items-center justify-center gap-8">
-                  <div className="p-3 rounded-lg bg-primary/10">
-                    <Mail className="w-8 h-8 text-primary" />
-                  </div>
-                  
-                  <div className="p-3 rounded-lg bg-primary/10">
-                    <Github className="w-8 h-8 text-primary" />
-                  </div>
-                  
-                  <div className="p-3 rounded-lg bg-primary/10">
-                    <Linkedin className="w-8 h-8 text-primary" />
-                  </div>
+          
+          <Card className="border-primary/10 max-w-md mx-auto">
+            <CardHeader className="text-center">
+              <CardTitle className="text-xl text-foreground">Get in Touch</CardTitle>
+              <CardDescription>
+                Available for research collaborations and consulting opportunities
+              </CardDescription>
+            </CardHeader>
+            <CardContent className="text-center">
+              <div className="flex items-center justify-center gap-8">
+                <div className="p-3 rounded-lg bg-primary/10">
+                  <Mail className="w-8 h-8 text-primary" />
                 </div>
-              </CardContent>
-            </Card>
-            
-            
-          </div>
+                
+                <div className="p-3 rounded-lg bg-primary/10">
+                  <Github className="w-8 h-8 text-primary" />
+                </div>
+                
+                <div className="p-3 rounded-lg bg-primary/10">
+                  <Linkedin className="w-8 h-8 text-primary" />
+                </div>
+              </div>
+            </CardContent>
+          </Card>
         </div>
       </div>
     </section>;
