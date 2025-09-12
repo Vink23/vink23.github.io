@@ -8,7 +8,7 @@ const HeroSection = () => {
   const [isDeleting, setIsDeleting] = useState(false);
   const [textIndex, setTextIndex] = useState(0);
   const [resumeDialogOpen, setResumeDialogOpen] = useState(false);
-  const texts = ["AI Researcher", "Machine Learning Scientist"];
+  const texts = ["AI Researcher", "Machine Learning Engineer", "Data Scientist"];
   useEffect(() => {
     const currentText = texts[textIndex];
     const timeout = setTimeout(() => {
