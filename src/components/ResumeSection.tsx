@@ -182,30 +182,6 @@ const ResumeSection = () => {
             </div>
           </section>
 
-          {/* Publications */}
-          <section className="mb-8">
-            <h5 className="text-xl font-bold text-foreground mb-4 border-l-4 border-primary pl-4">
-              Selected Publications
-            </h5>
-            
-            <div className="space-y-4 text-muted-foreground">
-              <div className="border-l-2 border-muted pl-4">
-                <p className="font-medium">"Adaptive Plasticity in Spiking Neural Networks for Continual Learning"</p>
-                <p className="text-sm">NeurIPS 2023 • <span className="text-primary">Best Paper Award</span></p>
-              </div>
-              
-              <div className="border-l-2 border-muted pl-4">
-                <p className="font-medium">"Neuromorphic Computing with Memristive Synapses: A Hardware-Software Co-design Approach"</p>
-                <p className="text-sm">Nature Machine Intelligence 2022</p>
-              </div>
-              
-              <div className="border-l-2 border-muted pl-4">
-                <p className="font-medium">"Temporal Coding in Biologically-Plausible Neural Networks"</p>
-                <p className="text-sm">ICML 2021</p>
-              </div>
-            </div>
-          </section>
-
           {/* Awards */}
           
         </div>
