@@ -22,15 +22,6 @@ const ProjectsSection = () => {
       status: "Active",
       type: "Platform",
       highlights: ["NL Queries", "Real-time", "Interactive Viz"]
-    },
-    {
-      title: "EdgeAI Toolkit",
-      description: "Comprehensive toolkit for optimizing and deploying AI models on edge devices with automatic quantization and performance profiling.",
-      tech: ["TensorFlow Lite", "ONNX", "ARM", "CUDA"],
-      stars: "956",
-      status: "Stable",
-      type: "Toolkit",
-      highlights: ["Edge Optimization", "Auto Quantization", "Profiling"]
     }
   ];
 
@@ -46,7 +37,7 @@ const ProjectsSection = () => {
           </p>
         </div>
         
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
           {projects.map((project, index) => (
             <Card 
               key={index} 
