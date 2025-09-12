@@ -14,7 +14,15 @@ const ContactSection = () => {
           
           <Card className="border-primary/10 max-w-4xl mx-auto">
             <CardHeader className="text-center">
-              <CardTitle className="text-xl text-foreground">Get in Touch</CardTitle>
+              <CardTitle className="text-xl text-foreground relative inline-block px-8 py-4">
+                <span className="relative z-10">Get in Touch</span>
+                <div className="absolute inset-0 -mx-16">
+                  <div className="absolute top-0 left-1/2 w-32 h-px bg-gradient-to-r from-transparent via-primary/60 to-transparent transform -translate-x-1/2"></div>
+                  <div className="absolute bottom-0 left-1/2 w-32 h-px bg-gradient-to-r from-transparent via-primary/60 to-transparent transform -translate-x-1/2"></div>
+                  <div className="absolute left-0 top-1/2 w-px h-16 bg-gradient-to-b from-transparent via-primary/60 to-transparent transform -translate-y-1/2"></div>
+                  <div className="absolute right-0 top-1/2 w-px h-16 bg-gradient-to-b from-transparent via-primary/60 to-transparent transform -translate-y-1/2"></div>
+                </div>
+              </CardTitle>
               <CardDescription>
                 Available for research collaborations and consulting opportunities
               </CardDescription>
