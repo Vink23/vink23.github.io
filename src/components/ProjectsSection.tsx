@@ -13,7 +13,7 @@ const ProjectsSection = () => {
     highlights: ["Domain-Adapted Retriever", "Cross-Encoder Reranking", "LoRA Fine-Tuning", "LLM-as-a-Judge"]
   }, {
     title: "PathoVision",
-    description: "Real-time analytics platform for knowledge graphs with natural language querying and interactive visualization of complex relationships.",
+    description: "A hybrid computer vision pipeline that classifies brain tumors with 96.7% accuracy by fusing classical features (edges, textures) with deep embeddings from a DINOv2 Vision Transformer.",
     tech: ["Python", "PyTorch", "OpenCV", "DINOv2", "Scikit-learn"],
     stars: "1.8k",
     status: "Active",
