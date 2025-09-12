@@ -33,7 +33,7 @@ const ProjectsSection = () => {
         
         <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
           {projects.map((project, index) => <Card key={index} className="group hover:shadow-neural transition-all duration-300 bg-gradient-card border-primary/10 h-full">
-              <CardHeader>
+              <CardHeader className="md:min-h-[220px]">
                 <div className="flex items-start justify-between mb-4">
                   <div>
                     <CardTitle className="text-xl text-foreground mb-2">
@@ -51,14 +51,14 @@ const ProjectsSection = () => {
                   </Badge>
                 </div>
                 
-                <CardDescription className="text-base leading-relaxed">
+                <CardDescription className="text-base leading-relaxed clamp-3">
                   {project.description}
                 </CardDescription>
               </CardHeader>
               
               <CardContent className="space-y-6">
                 <div className="space-y-4">
-                  <div className="min-h-[80px]">
+                  <div className="min-h-[120px] md:min-h-[140px]">
                     <h4 className="text-sm font-medium text-foreground mb-2">Key Features</h4>
                     <div className="flex flex-wrap gap-2">
                       {project.highlights.map((highlight, idx) => <Badge key={idx} variant="outline" className="text-xs border-tech-accent/30 text-tech-accent">
@@ -67,7 +67,7 @@ const ProjectsSection = () => {
                     </div>
                   </div>
                   
-                  <div className="min-h-[80px]">
+                  <div className="min-h-[140px] md:min-h-[176px]">
                     <h4 className="text-sm font-medium text-foreground mb-2">Technologies</h4>
                     <div className="flex flex-wrap gap-2">
                       {project.tech.map((tech, idx) => <Badge key={idx} variant="secondary" className="text-xs bg-muted/50">
