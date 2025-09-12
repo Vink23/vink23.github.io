@@ -58,12 +58,12 @@ const HeroSection = () => {
       {/* Neural Network Background */}
       <div className="absolute inset-0 z-0">
         <NeuralNetwork 
-          className="w-full h-full opacity-30" 
+          className="w-full h-full z-10" 
           nodeCount={80}
           connectionProbability={0.3}
           layers={6}
         />
-        <div className="absolute inset-0 bg-gradient-hero opacity-60 pointer-events-none" />
+        <div className="absolute inset-0 z-0 bg-gradient-hero opacity-60 pointer-events-none" />
       </div>
       
       {/* Content */}

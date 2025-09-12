@@ -266,7 +266,7 @@ export const NeuralNetwork = ({
     <div className={`relative ${className}`}>
       <svg
         ref={svgRef}
-        className="w-full h-full"
+        className="w-full h-full opacity-30"
         viewBox={`0 0 ${dimensions.width} ${dimensions.height}`}
         onMouseLeave={handleMouseLeave}
       >
