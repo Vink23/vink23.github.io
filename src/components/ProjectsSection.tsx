@@ -12,8 +12,8 @@ const ProjectsSection = () => {
     types: ["Framework", "Medical AI"],
     highlights: ["Domain-Adapted Retriever", "Cross-Encoder Reranking", "LoRA Fine-Tuning", "Faithfulness Evaluation"],
     buttonStyles: {
-      container: "mt-4",
-      codeButton: "mt-2",
+      container: "mt-6",
+      codeButton: "",
       demoButton: ""
     }
   }, {
@@ -26,8 +26,8 @@ const ProjectsSection = () => {
     highlights: ["DINOv2", "Grid Search CV", "Blob Detection", "PCA"],
     buttonStyles: {
       container: "mt-6",
-      codeButton: "mt-2",
-      demoButton: "mt-4"
+      codeButton: "",
+      demoButton: ""
     }
   }];
   return <section className="py-20 bg-gradient-section">
