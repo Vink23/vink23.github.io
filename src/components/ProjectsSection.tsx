@@ -88,9 +88,11 @@ const ProjectsSection = () => {
                 </div>
                 
                 <div className={`flex gap-2 ${project.buttonStyles.container}`}>
-                  <Button variant="tech" size="sm" className={`flex-1 gap-2 ${project.buttonStyles.codeButton}`}>
-                    <Github className="w-4 h-4" />
-                    Code
+                  <Button variant="tech" size="sm" className={`flex-1 gap-2 ${project.buttonStyles.codeButton}`} asChild>
+                    <a href={project.title === 'SurgiRAG' ? 'https://github.com/Vink23/SurgiRAG/tree/main' : '#'} target="_blank" rel="noopener noreferrer">
+                      <Github className="w-4 h-4" />
+                      Code
+                    </a>
                   </Button>
                   <Button variant="outline" size="sm" className={`gap-2 ${project.buttonStyles.demoButton}`} asChild>
                     <a href={
