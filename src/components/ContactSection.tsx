@@ -13,18 +13,23 @@ const ContactSection = () => {
           </h2>
           
           <div className="flex items-center justify-center gap-6">
-            <Button variant="outline" size="xl">
-              <a href="https://github.com/vink23" target="_blank" rel="noopener noreferrer">
+            <Button variant="outline" size="xl" asChild>
+              <a href="https://github.com/vink23" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
                 <Github className="w-7 h-7" />
                 <span>GitHub</span>
+              </a>
             </Button>
-            <Button variant="outline" size="xl">
-              <Linkedin className="w-7 h-7" />
-              <span>LinkedIn</span>
+            <Button variant="outline" size="xl" asChild>
+              <a href="#" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+                <Linkedin className="w-7 h-7" />
+                <span>LinkedIn</span>
+              </a>
             </Button>
-            <Button variant="outline" size="xl">
-              <Twitter className="w-7 h-7" />
-              <span>Twitter</span>
+            <Button variant="outline" size="xl" asChild>
+              <a href="#" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+                <Twitter className="w-7 h-7" />
+                <span>Twitter</span>
+              </a>
             </Button>
           </div>
         </div>
