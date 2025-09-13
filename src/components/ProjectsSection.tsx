@@ -19,7 +19,7 @@ const ProjectsSection = () => {
   }, {
     title: "PathoVision",
     description: "A hybrid computer vision pipeline that classifies brain tumors with 96.7% accuracy by fusing classical features (edges, textures) with deep embeddings from a DINOv2 Vision Transformer.",
-    tech: ["Python", "PyTorch", "OpenCV", "DINOv2", "Scikit-learn", "NumPy"],
+    tech: ["Python", "PyTorch", "OpenCV", "DINOv2", "Scikit-learn", "NumPy", "Matplotlib", "PIL"],
     stars: "1.8k",
     status: "Active",
     types: ["Computer Vision", "Medical AI"],
