@@ -94,7 +94,7 @@ const ProjectsSection = () => {
                   </Button>
                   <Button variant="outline" size="sm" className={`gap-2 ${project.buttonStyles.demoButton}`}>
                     <ExternalLink className="w-4 h-4" />
-                    Demo
+                    Paper
                   </Button>
                 </div>
               </CardContent>
