@@ -17,10 +17,10 @@ const ResumeSection = () => {
               <a href="mailto:vinkuruppu@gmail.com" className="text-muted-foreground hover:text-primary">
                 <Mail className="w-5 h-5" />
               </a>
-              <a href="#" className="text-muted-foreground hover:text-primary">
+              <a href="https://github.com/Vink23" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary">
                 <Github className="w-5 h-5" />
               </a>
-              <a href="#" className="text-muted-foreground hover:text-primary">
+              <a href="https://www.linkedin.com/in/vinithkuruppu/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary">
                 <Linkedin className="w-5 h-5" />
               </a>
             </div>
