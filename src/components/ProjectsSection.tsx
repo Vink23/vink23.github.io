@@ -93,7 +93,13 @@ const ProjectsSection = () => {
                     Code
                   </Button>
                   <Button variant="outline" size="sm" className={`gap-2 ${project.buttonStyles.demoButton}`} asChild>
-                    <a href={project.title === 'SurgiRAG' ? 'https://github.com/Vink23/SurgiRAG/blob/main/SurgiRAG%20Report.pdf' : '#'} target="_blank" rel="noopener noreferrer">
+                    <a href={
+                      project.title === 'SurgiRAG' 
+                        ? 'https://github.com/Vink23/SurgiRAG/blob/main/SurgiRAG%20Report.pdf' 
+                        : project.title === 'PathoVision'
+                        ? 'https://github.com/Vink23/PathoVision/blob/main/Brain%20Tumor%20Report.pdf'
+                        : '#'
+                    } target="_blank" rel="noopener noreferrer">
                       <ExternalLink className="w-4 h-4" />
                       Paper
                     </a>
