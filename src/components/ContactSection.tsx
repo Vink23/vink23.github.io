@@ -20,7 +20,7 @@ const ContactSection = () => {
               </a>
             </Button>
             <Button variant="outline" size="xl" asChild>
-              <a href="#" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+              <a href="https://www.linkedin.com/in/vinithkuruppu/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
                 <Linkedin className="w-7 h-7" />
                 <span>LinkedIn</span>
               </a>
