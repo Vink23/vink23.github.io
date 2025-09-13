@@ -77,7 +77,7 @@ const ProjectsSection = () => {
                   </div>
                 </div>
                 
-                <div className="flex gap-2">
+                <div className="flex gap-2 mt-4">
                   <Button variant="tech" size="sm" className="flex-1 gap-2">
                     <Github className="w-4 h-4" />
                     Code
