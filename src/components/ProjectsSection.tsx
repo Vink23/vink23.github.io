@@ -12,7 +12,7 @@ const ProjectsSection = () => {
     types: ["Framework", "Medical AI"],
     highlights: ["Domain-Adapted Retriever", "Cross-Encoder Reranking", "LoRA Fine-Tuning", "Faithfulness Evaluation"],
     buttonStyles: {
-      container: "mt-2",
+      container: "",
       codeButton: "",
       demoButton: ""
     }
@@ -25,7 +25,7 @@ const ProjectsSection = () => {
     types: ["Computer Vision", "Medical AI"],
     highlights: ["DINOv2", "Grid Search CV", "Blob Detection", "PCA"],
     buttonStyles: {
-      container: "mt-2",
+      container: "",
       codeButton: "",
       demoButton: ""
     }
