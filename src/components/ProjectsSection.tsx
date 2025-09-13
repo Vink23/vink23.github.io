@@ -66,7 +66,7 @@ const ProjectsSection = () => {
                 </CardDescription>
               </CardHeader>
               
-              <CardContent className="space-y-6">
+              <CardContent className="flex flex-col justify-between h-full">
                 <div className="space-y-4">
                   <div className="min-h-[78px]">
                     <h4 className="text-sm font-medium text-foreground mb-2">Key Features</h4>
