@@ -92,9 +92,11 @@ const ProjectsSection = () => {
                     <Github className="w-4 h-4" />
                     Code
                   </Button>
-                  <Button variant="outline" size="sm" className={`gap-2 ${project.buttonStyles.demoButton}`}>
-                    <ExternalLink className="w-4 h-4" />
-                    Paper
+                  <Button variant="outline" size="sm" className={`gap-2 ${project.buttonStyles.demoButton}`} asChild>
+                    <a href={project.title === 'SurgiRAG' ? 'https://github.com/Vink23/SurgiRAG/blob/main/SurgiRAG%20Report.pdf' : '#'} target="_blank" rel="noopener noreferrer">
+                      <ExternalLink className="w-4 h-4" />
+                      Paper
+                    </a>
                   </Button>
                 </div>
               </CardContent>
