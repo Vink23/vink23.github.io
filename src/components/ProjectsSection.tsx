@@ -10,7 +10,12 @@ const ProjectsSection = () => {
     stars: "2.3k",
     status: "Active",
     types: ["Framework", "Medical AI"],
-    highlights: ["Domain-Adapted Retriever", "Cross-Encoder Reranking", "LoRA Fine-Tuning", "Faithfulness Evaluation"]
+    highlights: ["Domain-Adapted Retriever", "Cross-Encoder Reranking", "LoRA Fine-Tuning", "Faithfulness Evaluation"],
+    buttonStyles: {
+      container: "mt-4",
+      codeButton: "mt-2",
+      demoButton: ""
+    }
   }, {
     title: "PathoVision",
     description: "A hybrid computer vision pipeline that classifies brain tumors with 96.7% accuracy by fusing classical features (edges, textures) with deep embeddings from a DINOv2 Vision Transformer.",
@@ -18,7 +23,12 @@ const ProjectsSection = () => {
     stars: "1.8k",
     status: "Active",
     types: ["Computer Vision", "Medical AI"],
-    highlights: ["DINOv2", "Grid Search CV", "Blob Detection", "PCA"]
+    highlights: ["DINOv2", "Grid Search CV", "Blob Detection", "PCA"],
+    buttonStyles: {
+      container: "mt-6",
+      codeButton: "mt-2",
+      demoButton: "mt-4"
+    }
   }];
   return <section className="py-20 bg-gradient-section">
       <div className="max-w-6xl mx-auto px-6">
@@ -77,12 +87,12 @@ const ProjectsSection = () => {
                   </div>
                 </div>
                 
-                <div className={`flex gap-2 ${project.title === 'PathoVision' ? 'mt-6' : 'mt-4'}`}>
-                  <Button variant="tech" size="sm" className="flex-1 gap-2 mt-2">
+                <div className={`flex gap-2 ${project.buttonStyles.container}`}>
+                  <Button variant="tech" size="sm" className={`flex-1 gap-2 ${project.buttonStyles.codeButton}`}>
                     <Github className="w-4 h-4" />
                     Code
                   </Button>
-                  <Button variant="outline" size="sm" className={`gap-2 ${project.title === 'PathoVision' ? 'mt-4' : ''}`}>
+                  <Button variant="outline" size="sm" className={`gap-2 ${project.buttonStyles.demoButton}`}>
                     <ExternalLink className="w-4 h-4" />
                     Demo
                   </Button>
