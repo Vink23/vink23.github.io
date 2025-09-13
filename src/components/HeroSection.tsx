@@ -80,9 +80,11 @@ const HeroSection = () => {
           </p>
           
           <div className="flex flex-wrap gap-4 justify-center pt-8">
-            <Button variant="neural" size="lg" className="gap-2">
-              <Mail className="w-5 h-5" />
-              Contact Me
+            <Button variant="neural" size="lg" className="gap-2" asChild>
+              <a href="mailto:vinkuruppu@gmail.com">
+                <Mail className="w-5 h-5" />
+                Contact Me
+              </a>
             </Button>
             <Dialog open={resumeDialogOpen} onOpenChange={setResumeDialogOpen}>
               <DialogTrigger asChild>
