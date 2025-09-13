@@ -14,8 +14,9 @@ const ContactSection = () => {
           
           <div className="flex items-center justify-center gap-6">
             <Button variant="outline" size="xl">
-              <Github className="w-7 h-7" />
-              <span>GitHub</span>
+              <a href="https://github.com/vink23" target="_blank" rel="noopener noreferrer">
+                <Github className="w-7 h-7" />
+                <span>GitHub</span>
             </Button>
             <Button variant="outline" size="xl">
               <Linkedin className="w-7 h-7" />
