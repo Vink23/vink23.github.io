@@ -117,9 +117,6 @@ const HeroSection = () => {
             <a href="https://www.linkedin.com/in/vinithkuruppu/" target="_blank" rel="noopener noreferrer" className="text-primary-foreground/70 hover:text-primary-foreground transition-smooth">
               <Linkedin className="w-6 h-6" />
             </a>
-            <a href="mailto:vinkuruppu@gmail.com" className="text-primary-foreground/70 hover:text-primary-foreground transition-smooth">
-              <Mail className="w-6 h-6" />
-            </a>
           </div>
         </div>
       </div>
