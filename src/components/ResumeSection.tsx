@@ -1,6 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Mail, Phone, MapPin, Globe, Github, Linkedin } from "lucide-react";
+import { Github, Linkedin } from "lucide-react";
 const ResumeSection = () => {
   return <section id="resume-snapshot" className="py-20 bg-gradient-section">
       <div className="max-w-6xl mx-auto px-6">
@@ -12,24 +12,6 @@ const ResumeSection = () => {
             <h3 className="text-3xl font-bold text-foreground mb-2">Vinith Kuruppu</h3>
             <h4 className="text-lg text-muted-foreground mb-4">AI Researcher & Machine Learning Scientist</h4>
             
-            <div className="flex flex-wrap justify-center gap-4 text-sm text-muted-foreground">
-              <div className="flex items-center gap-1">
-                <Mail className="w-4 h-4" />
-                alex.chen@email.com
-              </div>
-              <div className="flex items-center gap-1">
-                <Phone className="w-4 h-4" />
-                (555) 123-4567
-              </div>
-              <div className="flex items-center gap-1">
-                <MapPin className="w-4 h-4" />
-                San Francisco, CA
-              </div>
-              <div className="flex items-center gap-1">
-                <Globe className="w-4 h-4" />
-                alexchen.ai
-              </div>
-            </div>
             
             <div className="flex justify-center gap-4 mt-4">
               <a href="#" className="text-muted-foreground hover:text-primary">
