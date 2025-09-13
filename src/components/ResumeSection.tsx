@@ -1,6 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Github, Linkedin } from "lucide-react";
+import { Mail, Github, Linkedin } from "lucide-react";
 const ResumeSection = () => {
   return <section id="resume-snapshot" className="py-20 bg-gradient-section">
       <div className="max-w-6xl mx-auto px-6">
@@ -14,6 +14,9 @@ const ResumeSection = () => {
             
             
             <div className="flex justify-center gap-4 mt-4">
+              <a href="mailto:vinkuruppu@gmail.com" className="text-muted-foreground hover:text-primary">
+                <Mail className="w-5 h-5" />
+              </a>
               <a href="#" className="text-muted-foreground hover:text-primary">
                 <Github className="w-5 h-5" />
               </a>
