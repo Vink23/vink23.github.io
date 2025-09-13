@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
-import { Mail, Github, Linkedin, Twitter } from "lucide-react";
+import { Mail, Github, Linkedin } from "lucide-react";
 const ContactSection = () => {
   return <section className="py-20 bg-background">
       <div className="max-w-6xl mx-auto px-6">
@@ -26,9 +26,9 @@ const ContactSection = () => {
               </a>
             </Button>
             <Button variant="outline" size="xl" asChild>
-              <a href="#" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
-                <Twitter className="w-7 h-7" />
-                <span>Twitter</span>
+              <a href="mailto:vinkuruppu@gmail.com" className="flex items-center gap-2">
+                <Mail className="w-7 h-7" />
+                <span>Email</span>
               </a>
             </Button>
           </div>
