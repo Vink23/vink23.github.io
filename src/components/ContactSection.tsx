@@ -12,18 +12,18 @@ const ContactSection = () => {
             Let's Collaborate
           </h2>
           
-          <div className="flex items-center justify-center gap-4">
-            <Button variant="outline" size="lg">
-              <Github className="w-6 h-6" />
-              <span className="text-sm">GitHub</span>
+          <div className="flex items-center justify-center gap-6">
+            <Button variant="outline" size="xl">
+              <Github className="w-7 h-7" />
+              <span>GitHub</span>
             </Button>
-            <Button variant="outline" size="lg">
-              <Linkedin className="w-6 h-6" />
-              <span className="text-sm">LinkedIn</span>
+            <Button variant="outline" size="xl">
+              <Linkedin className="w-7 h-7" />
+              <span>LinkedIn</span>
             </Button>
-            <Button variant="outline" size="lg">
-              <Twitter className="w-6 h-6" />
-              <span className="text-sm">Twitter</span>
+            <Button variant="outline" size="xl">
+              <Twitter className="w-7 h-7" />
+              <span>Twitter</span>
             </Button>
           </div>
         </div>
