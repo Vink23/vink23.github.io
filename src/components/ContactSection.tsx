@@ -12,26 +12,20 @@ const ContactSection = () => {
             Let's Collaborate
           </h2>
           
-          <Card className="border-border/[0.02] max-w-4xl mx-auto bg-card/50 backdrop-blur-sm">
-            <CardHeader className="text-center">
-            </CardHeader>
-            <CardContent className="text-center">
-              <div className="flex items-center justify-center gap-4">
-                <Button variant="outline">
-                  <Github className="w-6 h-6" />
-                  <span className="text-sm">GitHub</span>
-                </Button>
-                <Button variant="outline">
-                  <Linkedin className="w-6 h-6" />
-                  <span className="text-sm">LinkedIn</span>
-                </Button>
-                <Button variant="outline">
-                  <Twitter className="w-6 h-6" />
-                  <span className="text-sm">Twitter</span>
-                </Button>
-              </div>
-            </CardContent>
-          </Card>
+          <div className="flex items-center justify-center gap-4">
+            <Button variant="outline">
+              <Github className="w-6 h-6" />
+              <span className="text-sm">GitHub</span>
+            </Button>
+            <Button variant="outline">
+              <Linkedin className="w-6 h-6" />
+              <span className="text-sm">LinkedIn</span>
+            </Button>
+            <Button variant="outline">
+              <Twitter className="w-6 h-6" />
+              <span className="text-sm">Twitter</span>
+            </Button>
+          </div>
         </div>
       </div>
     </section>;
