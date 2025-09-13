@@ -13,15 +13,15 @@ const ContactSection = () => {
           </h2>
           
           <div className="flex items-center justify-center gap-4">
-            <Button variant="outline">
+            <Button variant="outline" size="lg">
               <Github className="w-6 h-6" />
               <span className="text-sm">GitHub</span>
             </Button>
-            <Button variant="outline">
+            <Button variant="outline" size="lg">
               <Linkedin className="w-6 h-6" />
               <span className="text-sm">LinkedIn</span>
             </Button>
-            <Button variant="outline">
+            <Button variant="outline" size="lg">
               <Twitter className="w-6 h-6" />
               <span className="text-sm">Twitter</span>
             </Button>
