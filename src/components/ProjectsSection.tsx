@@ -78,7 +78,7 @@ const ProjectsSection = () => {
                 </div>
                 
                 <div className={`flex gap-2 ${project.title === 'PathoVision' ? 'mt-6' : 'mt-4'}`}>
-                  <Button variant="tech" size="sm" className="flex-1 gap-2">
+                  <Button variant="tech" size="sm" className="flex-1 gap-2 mt-2">
                     <Github className="w-4 h-4" />
                     Code
                   </Button>
