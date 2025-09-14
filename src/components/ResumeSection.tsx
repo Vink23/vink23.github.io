@@ -32,11 +32,7 @@ const ResumeSection = () => {
               Professional Summary
             </h5>
             <p className="text-muted-foreground leading-relaxed">
-              Leading AI researcher specializing in neuro-inspired artificial intelligence with 8+ years of experience 
-              developing biologically-plausible neural networks, neuromorphic computing systems, and brain-inspired 
-              architectures. Published researcher with expertise in spiking neural networks, synaptic plasticity, 
-              and energy-efficient AI hardware. Passionate about bridging neuroscience and artificial intelligence 
-              to create next-generation intelligent systems.
+              Leading AI researcher specializing in neuro-inspired artificial intelligence with experience translating rigorous research into high-impact, production-ready systems. Passionate about bridging neuroscience and artificial intelligence to create next-generation intelligent systems that align with human values.
             </p>
           </section>
 
