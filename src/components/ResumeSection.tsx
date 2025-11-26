@@ -92,7 +92,7 @@ const ResumeSection = () => {
                 <CardHeader className="pb-2">
                   <div className="flex justify-between items-start">
                     <div>
-                      <CardTitle className="text-lg">Research Data Scienctist</CardTitle>
+                      <CardTitle className="text-lg">Research Data Scientist</CardTitle>
                       <p className="text-muted-foreground italic">Exponent Incorporated</p>
                     </div>
                     <Badge variant="secondary">July 2022 - May 2024</Badge>
