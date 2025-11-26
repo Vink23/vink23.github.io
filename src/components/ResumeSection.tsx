@@ -163,7 +163,7 @@ const ResumeSection = () => {
                 <CardHeader>
                   <div className="flex justify-between items-start">
                     <div>
-                      <CardTitle className="text-lg">B.S. in Computational Neuroscience</CardTitle>
+                      <CardTitle className="text-lg">B.S. in Neuroscience</CardTitle>
                       <p className="text-muted-foreground">Loyola University Chicago</p>
                       
                     </div>
