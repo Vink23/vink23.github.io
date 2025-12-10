@@ -4,7 +4,7 @@ import ResumeSection from "@/components/ResumeSection";
 import ProjectsSection from "@/components/ProjectsSection";
 import ContactSection from "@/components/ContactSection";
 import ThemeToggle from "@/components/ThemeToggle";
-
+import { NeuralNetwork } from "@/components/NeuralNetwork";
 
 const Index = () => {
   return (
