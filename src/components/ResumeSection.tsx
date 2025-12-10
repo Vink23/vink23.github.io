@@ -31,9 +31,7 @@ const ResumeSection = () => {
             <h5 className="text-xl font-bold text-foreground mb-4 border-l-4 border-primary pl-4">
               Professional Summary
             </h5>
-            <p className="text-muted-foreground leading-relaxed">
-              Leading AI researcher specializing in neuro-inspired artificial intelligence with experience translating rigorous research into high-impact, production-ready systems. Passionate about bridging neuroscience and artificial intelligence to create next-generation intelligent systems that align with human values.
-            </p>
+            <p className="text-muted-foreground leading-relaxed">AI researcher specializing in neuro-inspired artificial intelligence with experience translating rigorous research into high-impact, production-ready systems. Passionate about bridging neuroscience and artificial intelligence to create next-generation intelligent systems that align with human values.</p>
           </section>
 
           {/* Experience */}
@@ -55,11 +53,9 @@ const ResumeSection = () => {
                 </CardHeader>
                 <CardContent className="pt-2">
                   <ul className="list-disc list-inside space-y-2 text-muted-foreground">
-                    <li>Mentored graduate students on experimental design and causal inference, raising proposal quality by 20% as
-                    measured by rubric scores.</li>
-                    <li>Guided 80+ master’s students through research design and ML applications, improving project quality and raising
-                    average project scores by 12%</li>
-                    <li>Delivered feedback on 40+ research projects, strengthening methodological rigor</li>
+                    <li>Mentored 80+ master’s students on research design and ML applications, improving average project scores by 12% through structured guidance on experimental design, causal inference, and statistical rigor</li>
+                    <li>Delivered feedback on 40+ research projects involving predictive modeling, A/B testing, and causal analysis, raising proposal quality by 20% as measured by rubric scores</li>
+                    
                   </ul>
                 </CardContent>
               </Card>
@@ -76,14 +72,10 @@ const ResumeSection = () => {
                 </CardHeader>
                 <CardContent className="pt-2">
                   <ul className="list-disc list-inside space-y-2 text-muted-foreground">
-                    <li>Built fairness-aware allocation models that directed $70 billon across 3,300+ hospitals, reducing variance
-                    between need and award and improving equity across US regions.</li>
-                    <li>Developed Python pipelines for hospital-expense modeling that improved predictive accuracy by 22% vs. baseline,
-                    establishing cost-ceiling estimates used in FEMA funding reviews.</li>
-                    <li>Designed and validated disaster-response modeling frameworks that informed federal preparedness policy
-                    decisions.</li>
-                    <li>Authored 30+ technical reports used by congressional committees, FEMA, and RAND leadership, driving ongoing
-                    allocation-QA workstreams</li>
+                    <li>Developed fairness-aware allocation models that directed $70 billion across 3,300+ hospitals, reducing variance between need/funding and improving equity in disaster reimbursement across US regions</li>
+                    <li>Engineered multi-class classification models achieving a 22% accuracy improvement over baseline through custom feature engineering and optimization, processing 1M+ expense records; the taxonomy and cost-ceiling estimates became the standard framework for FEMA allocation review</li>
+                    <li> Designed simulation frameworks to model disaster-response scenarios under uncertainty, conducting sensitivity analyses across 50+ parameter configurations; findings shaped federal preparedness policy recommendations for FEMA leadership</li>
+                    <li>Authored 30+ technical reports for congressional committees and federal agencies, translating complex statistical findings into policy recommendations that drove ongoing quality assurance improvements in multi-billion-dollar allocation processes</li>
                   </ul>
                 </CardContent>
               </Card>
@@ -100,14 +92,10 @@ const ResumeSection = () => {
                 </CardHeader>
                 <CardContent className="pt-2">
                   <ul className="list-disc list-inside space-y-2 text-muted-foreground">
-                    <li>Built Python pipelines ingesting data from 3,000+ biosensors, cutting integration time by 15% and reducing
-                    pipeline latency.</li>
-                    <li>Led end-to-end FDA-compliant validation for biosensor trials, achieving 100% pass on internal QA audits and
-                    enabling accurate real-time health monitoring</li>
-                    <li>Analyzed high-frequency signals to prioritize design changes for a $12B product line, shortening decision cycles by
-                     20% and increasing signal-quality pass rate</li>
-                     <li>Diagnosed and resolved defects in proprietary study software, raising automated test coverage from 42% to 78%
-                     and accelerating release cadence by 50%</li>
+                    <li>Built Python pipelines processing high-frequency signals from 3,000+ biosensors for hypertension detection algorithm, reducing integration time by 15%; analysis prioritized design changes for a $12B product line, shortening decision cycles by 20% and improving signal quality pass rate by 25% through systematic hypothesis testing and statistical process control</li>
+                    <li>Led end-to-end FDA-compliant validation for biosensor clinical trials, achieving 100% pass rate on internal QA audits through rigorous statistical validation and bias analysis; work enabled product launch for a health monitoring platform</li>
+                    <li>Conducted fairness-aware analysis of biosensor signals across demographic subgroups (age, gender, skin tone), identifying algorithm performance disparities that informed design changes and improved signal quality pass rate by 25%, ensuring equitable accuracy</li>
+                     <li>Diagnosed and resolved defects in proprietary study software, raising automated test coverage and accelerating release cadence by 50%, eliminating critical bugs in FDA-regulated clinical trial systems</li>
                   </ul>
                 </CardContent>
               </Card>
@@ -124,14 +112,11 @@ const ResumeSection = () => {
                 </CardHeader>
                 <CardContent className="pt-2">
                   <ul className="list-disc list-inside space-y-2 text-muted-foreground">
-                    <li>Led a 6-person team to build DL/CV models of human visual perception and established a lab benchmark for
-                    object recognition.</li>
-                    <li>Improved model accuracy by 11% vs. prior lab baseline on object recognition tasks by systematic TensorFlow
-                    hyperparameter search, targeted augmentations, and architecture refinements.</li>
+                    <li>Led a 6-person research team developing bio-inspired CNN architectures with attention mechanisms to model human visual perception, establishing lab benchmarks for human behavioral data from EEG/eye-tracking studies</li>
+                    <li>Improved model accuracy by 11% over prior lab baseline through systematic hyperparameter optimization, targeted data augmentation, and architecture refinements, achieving state-of-the-art performance on object recognition tasks</li>
                     <li>Engineered Python data pipelines for image and behavioral datasets, reducing preprocessing time by 30% and
                     cutting experiment turnaround time.</li>
-                    <li>Developed papers and technical documentation that supported new grant funding and standardized analysis
-                    methods across the lab</li>
+                    <li>Developed technical documentation and contributed to grant proposals supporting continued funding</li>
                   </ul>
                 </CardContent>
               </Card>

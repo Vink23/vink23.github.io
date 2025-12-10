@@ -63,10 +63,7 @@ const HeroSection = () => {
             {displayText}
             <span className="animate-pulse">|</span>
           </h2>
-          <p className="text-lg md:text-xl text-primary-foreground/80 max-w-2xl mx-auto leading-relaxed">
-            Advancing the frontiers of artificial intelligence through deep learning, 
-            natural language processing, and neural network architectures.
-          </p>
+          <p className="text-lg md:text-xl text-primary-foreground/80 max-w-2xl mx-auto leading-relaxed">Bridging AI and neuroscience to build interpretable, multimodla systems that work in high-stakes environments</p>
           
           <div className="flex flex-wrap gap-4 justify-center pt-8">
             <Button variant="neural" size="lg" className="gap-2" asChild>
