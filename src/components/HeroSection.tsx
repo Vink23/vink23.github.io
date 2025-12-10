@@ -1,7 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription, DialogTrigger, DialogFooter } from "@/components/ui/dialog";
 import { ArrowDown, Github, Linkedin, Mail, FileText } from "lucide-react";
-import { NeuralNetwork } from "@/components/NeuralNetwork";
 import { useState, useEffect } from "react";
 const HeroSection = () => {
   const [displayText, setDisplayText] = useState("");
@@ -55,16 +54,8 @@ const HeroSection = () => {
     window.open("/resume.pdf", "_blank", "noopener,noreferrer");
   };
   return <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Neural Network Background */}
-      <div className="absolute inset-0 z-0">
-        <NeuralNetwork 
-          className="w-full h-full z-10" 
-          nodeCount={80}
-          connectionProbability={0.3}
-          layers={6}
-        />
-        <div className="absolute inset-0 z-0 bg-gradient-hero opacity-60 pointer-events-none" />
-      </div>
+      {/* Gradient Background */}
+      <div className="absolute inset-0 z-0 bg-gradient-hero" />
       
       {/* Content */}
       <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
