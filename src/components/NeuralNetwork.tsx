@@ -34,7 +34,6 @@ export const NeuralNetwork = ({
     activeNeurons: 0,
     synapticActivity: 0
   });
-  const [isStatsExpanded, setIsStatsExpanded] = useState(false);
 
   // Initialize neural network
   useEffect(() => {
@@ -404,96 +403,6 @@ export const NeuralNetwork = ({
         })}
       </svg>
       
-      {/* Neural Activity Toggle - Positioned within hero section */}
-      <div className="absolute bottom-8 right-8 z-50">
-        {!isStatsExpanded ? (
-          /* Collapsed Button */
-          <button
-            onClick={() => setIsStatsExpanded(true)}
-            className="p-3 bg-card/75 backdrop-blur-sm rounded-lg border border-border shadow-neural hover:shadow-lg neural-transition hover-neural-glow pointer-events-auto"
-          >
-            <div className="flex items-center gap-2">
-              <div className="relative">
-                <div className="w-2 h-2 bg-accent rounded-full neural-spark" />
-                <div className="absolute inset-0 w-2 h-2 bg-accent/50 rounded-full neural-glow" />
-              </div>
-              <span className="text-xs font-medium text-foreground">
-                View Neural Activity
-              </span>
-            </div>
-          </button>
-        ) : (
-          /* Expanded Statistics Panel */
-          <div className="space-y-2">
-            {/* Main Activity Indicator */}
-            <div className="p-3 bg-card/90 backdrop-blur-sm rounded-lg border border-border shadow-neural">
-              <div className="flex items-center justify-between mb-2">
-                <div className="flex items-center gap-3">
-                  <div className="relative">
-                    <div className="w-3 h-3 bg-accent rounded-full neural-spark" />
-                    <div className="absolute inset-0 w-3 h-3 bg-accent/50 rounded-full neural-glow" />
-                  </div>
-                  <div className="text-sm font-medium text-foreground">
-                    Neural Network Status
-                  </div>
-                </div>
-                <button
-                  onClick={() => setIsStatsExpanded(false)}
-                  className="text-muted-foreground hover:text-foreground neural-transition"
-                >
-                  ×
-                </button>
-              </div>
-              
-              {/* Detailed Statistics */}
-                <div className="space-y-1 text-xs font-mono">
-                  <div className="flex justify-between">
-                    <span className="text-muted-foreground">Active Neurons:</span>
-                    <span className="text-accent-foreground font-semibold">{networkStats.activeNeurons}/{nodeCount}</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span className="text-muted-foreground">Synapses:</span>
-                    <span className="text-secondary-foreground font-semibold">{networkStats.totalConnections}</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span className="text-muted-foreground">Network Activity:</span>
-                    <span className="text-foreground font-semibold">{networkStats.synapticActivity}</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span className="text-muted-foreground">Density:</span>
-                    <span className="text-foreground font-semibold">
-                      {Math.round((networkStats.totalConnections / (nodeCount * (nodeCount - 1))) * 1000) / 10}%
-                    </span>
-                  </div>
-                </div>
-            </div>
-            
-            {/* Neuron Type Legend */}
-            <div className="p-2 bg-card/90 backdrop-blur-sm rounded-lg border border-border text-xs">
-              <div className="font-medium text-foreground mb-1">Neuron Types</div>
-              <div className="space-y-1">
-                <div className="flex items-center gap-2">
-                  <div className="w-2 h-2 rounded-full bg-primary/60" />
-                  <span className="text-muted-foreground">Input (I)</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <div className="w-2 h-2 rounded-full bg-secondary/60" />
-                  <span className="text-muted-foreground">Hidden</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <div className="w-2 h-2 rounded-full bg-accent/60" />
-                  <span className="text-muted-foreground">Output (O)</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <div className="w-2 h-2 rounded-full" style={{backgroundColor: 'hsl(320 80% 60% / 0.6)'}} />
-                  <span className="text-muted-foreground">Memory (M)</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        )}
-      </div>
-
     </div>
   );
 };
