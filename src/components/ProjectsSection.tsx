@@ -47,7 +47,7 @@ const ProjectsSection = () => {
       stars: "1.2k",
       status: "Active",
       types: ["Speech Recognition", "Medical AI"],
-      highlights: ["Whisper Fine-Tuning", "16% WER Improvement", "Elder Speech", "Dementia Accessibility"],
+      highlights: ["Whisper Fine-Tuning", "Scalable Inference", "LoRA Adaptation", "Token Augmentation"],
       buttonStyles: {
         container: "",
         codeButton: "",
