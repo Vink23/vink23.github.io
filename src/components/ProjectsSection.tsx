@@ -65,13 +65,13 @@ const ProjectsSection = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch">
           {projects.map((project, index) => (
             <Card
               key={index}
-              className="group hover:shadow-neural transition-all duration-300 bg-gradient-card border-primary/10 h-full flex flex-col"
+              className="group hover:shadow-neural transition-all duration-300 bg-gradient-card border-primary/10 grid grid-rows-[auto_1fr_auto_auto_auto]"
             >
-              <CardHeader className="flex-shrink-0">
+              <CardHeader className="pb-4">
                 <div className="flex items-start justify-between mb-4">
                   <div>
                     <CardTitle className="text-xl text-foreground mb-2">{project.title}</CardTitle>
@@ -94,32 +94,30 @@ const ProjectsSection = () => {
                 <CardDescription className="text-base leading-relaxed">{project.description}</CardDescription>
               </CardHeader>
 
-              <CardContent className="flex flex-col flex-grow">
-                <div className="flex-grow space-y-4">
-                  <div>
-                    <h4 className="text-sm font-medium text-foreground mb-2">Key Features</h4>
-                    <div className="flex flex-wrap gap-2">
-                      {project.highlights.map((highlight, idx) => (
-                        <Badge key={idx} variant="outline" className="text-xs border-tech-accent/30 text-tech-accent">
-                          {highlight}
-                        </Badge>
-                      ))}
-                    </div>
-                  </div>
-
-                  <div>
-                    <h4 className="text-sm font-medium text-foreground mb-2">Technologies</h4>
-                    <div className="flex flex-wrap gap-2">
-                      {project.tech.map((tech, idx) => (
-                        <Badge key={idx} variant="secondary" className="text-xs bg-muted/50">
-                          {tech}
-                        </Badge>
-                      ))}
-                    </div>
-                  </div>
+              <CardContent className="pt-0 pb-4">
+                <h4 className="text-sm font-medium text-foreground mb-2">Key Features</h4>
+                <div className="flex flex-wrap gap-2">
+                  {project.highlights.map((highlight, idx) => (
+                    <Badge key={idx} variant="outline" className="text-xs border-tech-accent/30 text-tech-accent">
+                      {highlight}
+                    </Badge>
+                  ))}
                 </div>
+              </CardContent>
 
-                <div className={`flex gap-2 mt-6 ${project.buttonStyles.container}`}>
+              <CardContent className="pt-0 pb-4">
+                <h4 className="text-sm font-medium text-foreground mb-2">Technologies</h4>
+                <div className="flex flex-wrap gap-2">
+                  {project.tech.map((tech, idx) => (
+                    <Badge key={idx} variant="secondary" className="text-xs bg-muted/50">
+                      {tech}
+                    </Badge>
+                  ))}
+                </div>
+              </CardContent>
+
+              <CardContent className="pt-2">
+                <div className={`flex gap-2 ${project.buttonStyles.container}`}>
                   <Button
                     variant="tech"
                     size="sm"
