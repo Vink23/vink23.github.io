@@ -39,6 +39,21 @@ const ProjectsSection = () => {
         demoButton: "",
       },
     },
+    {
+      title: "AgeVoicE",
+      description:
+        "An ASR system that fine-tunes OpenAI's Whisper model to improve speech recognition for elderly individuals and people with dementia, achieving a 16% improvement in Word Error Rate.",
+      tech: ["Python", "PyTorch", "OpenAI Whisper", "HuggingFace", "Librosa", "NumPy"],
+      stars: "1.2k",
+      status: "Active",
+      types: ["Speech Recognition", "Medical AI"],
+      highlights: ["Whisper Fine-Tuning", "16% WER Improvement", "Elder Speech", "Dementia Accessibility"],
+      buttonStyles: {
+        container: "",
+        codeButton: "",
+        demoButton: "",
+      },
+    },
   ];
   return (
     <section className="py-20 bg-gradient-section">
@@ -117,7 +132,9 @@ const ProjectsSection = () => {
                           ? "https://github.com/Vink23/SurgiRAG/tree/main"
                           : project.title === "PathoVision"
                             ? "https://github.com/Vink23/PathoVision"
-                            : "#"
+                            : project.title === "AgeVoicE"
+                              ? "#"
+                              : "#"
                       }
                       target="_blank"
                       rel="noopener noreferrer"
@@ -133,7 +150,9 @@ const ProjectsSection = () => {
                           ? "https://github.com/Vink23/SurgiRAG/blob/main/SurgiRAG%20Paper.pdf"
                           : project.title === "PathoVision"
                             ? "https://github.com/Vink23/PathoVision/blob/main/Brain%20Tumor%20Report.pdf"
-                            : "#"
+                            : project.title === "AgeVoicE"
+                              ? "#"
+                              : "#"
                       }
                       target="_blank"
                       rel="noopener noreferrer"
