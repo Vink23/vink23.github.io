@@ -91,7 +91,7 @@ const ProjectsSection = () => {
                   </Badge>
                 </div>
 
-                <CardDescription className="text-base leading-relaxed clamp-3">{project.description}</CardDescription>
+                <CardDescription className="text-base leading-relaxed">{project.description}</CardDescription>
               </CardHeader>
 
               <CardContent className="space-y-4">
