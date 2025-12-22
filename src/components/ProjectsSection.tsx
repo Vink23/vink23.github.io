@@ -16,7 +16,6 @@ const ProjectsSection = () => {
         "Domain-Adapted Retriever",
         "Cross-Encoder Reranking",
         "LoRA Fine-Tuning",
-        "Faithfulness Evaluation",
       ],
       buttonStyles: {
         container: "",
