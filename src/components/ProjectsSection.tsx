@@ -69,9 +69,9 @@ const ProjectsSection = () => {
           {projects.map((project, index) => (
             <Card
               key={index}
-              className="group hover:shadow-neural transition-all duration-300 bg-gradient-card border-primary/10 h-full"
+              className="group hover:shadow-neural transition-all duration-300 bg-gradient-card border-primary/10 h-full flex flex-col"
             >
-              <CardHeader className="md:min-h-[220px]">
+              <CardHeader className="flex-shrink-0">
                 <div className="flex items-start justify-between mb-4">
                   <div>
                     <CardTitle className="text-xl text-foreground mb-2">{project.title}</CardTitle>
@@ -94,9 +94,9 @@ const ProjectsSection = () => {
                 <CardDescription className="text-base leading-relaxed">{project.description}</CardDescription>
               </CardHeader>
 
-              <CardContent className="space-y-4">
-                <div className="space-y-4">
-                  <div className="min-h-[78px]">
+              <CardContent className="flex flex-col flex-grow">
+                <div className="flex-grow space-y-4">
+                  <div>
                     <h4 className="text-sm font-medium text-foreground mb-2">Key Features</h4>
                     <div className="flex flex-wrap gap-2">
                       {project.highlights.map((highlight, idx) => (
@@ -119,7 +119,7 @@ const ProjectsSection = () => {
                   </div>
                 </div>
 
-                <div className={`flex gap-2 ${project.buttonStyles.container}`}>
+                <div className={`flex gap-2 mt-6 ${project.buttonStyles.container}`}>
                   <Button
                     variant="tech"
                     size="sm"
