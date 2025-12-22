@@ -69,7 +69,7 @@ const ProjectsSection = () => {
           {projects.map((project, index) => (
             <Card
               key={index}
-              className="group hover:shadow-neural transition-all duration-300 bg-gradient-card border-primary/10 h-full grid grid-rows-[auto_1fr_1fr_auto_auto]"
+              className="group hover:shadow-neural transition-all duration-300 bg-gradient-card border-primary/10 h-full grid grid-rows-[auto_1fr_auto_auto_auto]"
             >
               <CardHeader className="pb-0">
                 <div className="flex items-start justify-between mb-4">
@@ -92,7 +92,7 @@ const ProjectsSection = () => {
                 </div>
               </CardHeader>
 
-              <CardContent className="pt-2 pb-4">
+              <CardContent className="pt-2 pb-4 self-start">
                 <p className="text-base leading-relaxed text-muted-foreground">{project.description}</p>
               </CardContent>
 
