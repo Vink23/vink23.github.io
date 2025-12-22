@@ -45,7 +45,7 @@ const ProjectsSection = () => {
       tech: ["Python", "PyTorch", "PEFT", "Whisper", "AWS", "torchaudio", "FFmpeg", "Librosa"],
       stars: "1.2k",
       status: "Active",
-      types: ["Speech Recognition", "Medical AI"],
+      types: ["Speech Recognition", "Voice AI"],
       highlights: ["Whisper Fine-Tuning", "Scalable Inference", "LoRA Adaptation", "Token Augmentation"],
       buttonStyles: {
         container: "",
