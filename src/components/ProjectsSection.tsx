@@ -42,7 +42,7 @@ const ProjectsSection = () => {
     {
       title: "AgeVoicE",
       description:
-        "An ASR system that fine-tunes OpenAI's Whisper model to improve speech recognition for elderly individuals and people with dementia, achieving a 16% improvement in Word Error Rate.",
+        "A specialized speech recognition pipeline designed to transcribe dysfluent speech patterns from older adults with dementia. Fine-tuned OpenAI's Whisper model to handle speech irregularities and orchestrated a scalable AWS inference pipeline to achieve a 17% improvement.",
       tech: ["Python", "PyTorch", "OpenAI Whisper", "HuggingFace", "Librosa", "NumPy"],
       stars: "1.2k",
       status: "Active",
