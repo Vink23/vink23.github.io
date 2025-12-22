@@ -71,7 +71,7 @@ const ProjectsSection = () => {
               key={index}
               className="group hover:shadow-neural transition-all duration-300 bg-gradient-card border-primary/10 grid grid-rows-[auto_1fr_auto_auto_auto]"
             >
-              <CardHeader className="pb-4">
+              <CardHeader className="pb-0">
                 <div className="flex items-start justify-between mb-4">
                   <div>
                     <CardTitle className="text-xl text-foreground mb-2">{project.title}</CardTitle>
@@ -90,9 +90,11 @@ const ProjectsSection = () => {
                     {project.status}
                   </Badge>
                 </div>
-
-                <CardDescription className="text-base leading-relaxed">{project.description}</CardDescription>
               </CardHeader>
+
+              <CardContent className="pt-2 pb-4">
+                <p className="text-base leading-relaxed text-muted-foreground">{project.description}</p>
+              </CardContent>
 
               <CardContent className="pt-0 pb-4">
                 <h4 className="text-sm font-medium text-foreground mb-2">Key Features</h4>
