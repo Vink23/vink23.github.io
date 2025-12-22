@@ -43,7 +43,7 @@ const ProjectsSection = () => {
       title: "AgeVoicE",
       description:
         "A specialized speech recognition pipeline designed to transcribe dysfluent speech patterns from older adults with dementia. Fine-tuned OpenAI's Whisper model to handle speech irregularities and orchestrated a scalable AWS inference pipeline to achieve a 17% improvement.",
-      tech: ["Python", "PyTorch", "OpenAI Whisper", "HuggingFace", "Librosa", "NumPy"],
+      tech: ["Python", "PyTorch", "PEFT", "Whisper", "AWS", "torchaudio", "FFmpeg", "Librosa"],
       stars: "1.2k",
       status: "Active",
       types: ["Speech Recognition", "Medical AI"],
