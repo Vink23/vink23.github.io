@@ -132,7 +132,7 @@ const ProjectsSection = () => {
                           : project.title === "PathoVision"
                             ? "https://github.com/Vink23/PathoVision"
                             : project.title === "AgeVoicE"
-                              ? "#"
+                              ? "https://github.com/Vink23/AgeVoice"
                               : "#"
                       }
                       target="_blank"
