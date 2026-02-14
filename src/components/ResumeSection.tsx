@@ -48,7 +48,7 @@ const ResumeSection = () => {
                       <CardTitle className="text-lg">Machine Learning Researcher</CardTitle>
                       <p className="text-muted-foreground italic">University of California, Berkeley</p>
                     </div>
-                    <Badge variant="secondary">Jan 2025 - Present</Badge>
+                    <Badge variant="secondary">Aug 2025 - Present</Badge>
                   </div>
                 </CardHeader>
                 <CardContent className="pt-2">
