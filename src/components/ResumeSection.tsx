@@ -53,7 +53,7 @@ const ResumeSection = () => {
                 </CardHeader>
                 <CardContent className="pt-2">
                   <ul className="list-disc list-inside space-y-2 text-muted-foreground">
-                    <li>Mentored 80+ master’s students on research design and ML applications, improving average project scores by 12% through structured guidance on experimental design, causal inference, and statistical rigor</li>
+                    <li>Mentored 80+ master's students on research design and ML applications, improving average project scores by 12% through structured guidance on experimental design, causal inference, and statistical rigor</li>
                     <li>Delivered feedback on 40+ research projects involving predictive modeling, A/B testing, and causal analysis, raising proposal quality by 20% as measured by rubric scores</li>
                     
                   </ul>
@@ -72,10 +72,9 @@ const ResumeSection = () => {
                 </CardHeader>
                 <CardContent className="pt-2">
                   <ul className="list-disc list-inside space-y-2 text-muted-foreground">
-                    <li>Developed fairness-aware allocation models that directed $70 billion across 3,300+ hospitals, reducing variance between need/funding and improving equity in disaster reimbursement across US regions</li>
-                    <li>Engineered multi-class classification models achieving a 22% accuracy improvement over baseline through custom feature engineering and optimization, processing 1M+ expense records; the taxonomy and cost-ceiling estimates became the standard framework for FEMA allocation review</li>
-                    <li> Designed simulation frameworks to model disaster-response scenarios under uncertainty, conducting sensitivity analyses across 50+ parameter configurations; findings shaped federal preparedness policy recommendations for FEMA leadership</li>
-                    <li>Authored 30+ technical reports for congressional committees and federal agencies, translating complex statistical findings into policy recommendations that drove ongoing quality assurance improvements in multi-billion-dollar allocation processes</li>
+                    <li>Developed fairness-aware allocation models that informed the allocation of $70 billion across 3,300+ hospitals, reducing allocation error and improving equity in disaster reimbursement across U.S. regions.</li>
+                    <li>Shipped an Excel-integrated classification tool backed by an AWS ML endpoint, enabling non-technical analysts to label 1M+ expense records with one click; improved accuracy by 22% vs. manual baseline and was adopted in FEMA allocation review workflows.</li>
+                    <li>Designed simulation frameworks for disaster-response scenarios under uncertainty and ran sensitivity analyses across 50+ parameter configurations; findings directly shaped FEMA preparedness protocols.</li>
                   </ul>
                 </CardContent>
               </Card>
