@@ -210,6 +210,7 @@ const ResumeSection = () => {
                     <Badge variant="secondary">NumPy</Badge>
                     <Badge variant="secondary">Vector Databases (FAISS)</Badge>
                     <Badge variant="secondary">SentenceTransformers</Badge>
+                    <Badge variant="secondary">Spark/PySpark</Badge>
                   </div>
                 </CardContent>
               </Card>
