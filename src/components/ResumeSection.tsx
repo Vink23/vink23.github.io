@@ -92,10 +92,9 @@ const ResumeSection = () => {
                 </CardHeader>
                 <CardContent className="pt-2">
                   <ul className="list-disc list-inside space-y-2 text-muted-foreground">
-                    <li>Built Python pipelines processing high-frequency signals from 3,000+ biosensors for hypertension detection algorithm, reducing integration time by 15%; analysis prioritized design changes for a $12B product line, shortening decision cycles by 20% and improving signal quality pass rate by 25% through systematic hypothesis testing and statistical process control</li>
-                    <li>Led end-to-end FDA-compliant validation for biosensor clinical trials, achieving 100% pass rate on internal QA audits through rigorous statistical validation and bias analysis; work enabled product launch for a health monitoring platform</li>
-                    <li>Conducted fairness-aware analysis of biosensor signals across demographic subgroups (age, gender, skin tone), identifying algorithm performance disparities that informed design changes and improved signal quality pass rate by 25%, ensuring equitable accuracy</li>
-                     <li>Diagnosed and resolved defects in proprietary study software, raising automated test coverage and accelerating release cadence by 50%, eliminating critical bugs in FDA-regulated clinical trial systems</li>
+                    <li>Engineered data ingestion pipelines processing high-frequency physiological signals from 3,000+ Apple Watch devices, reducing integration time by 15% and enabling rapid iteration on Apple Health's hypertension detection algorithms.</li>
+                    <li>Led end-to-end FDA-compliant validation for biosensor clinical trials, achieving 100% pass rate on QA audits through rigorous statistical validation and bias analysis; work enabled product launch for a health monitoring platform.</li>
+                    <li>Conducted fairness-aware analysis of biosensor signals across demographic subgroups (age, gender, skin tone), identifying algorithm performance disparities that informed design changes, improving signal-quality acceptance by 25% and reducing group-level performance gaps.</li>
                   </ul>
                 </CardContent>
               </Card>
