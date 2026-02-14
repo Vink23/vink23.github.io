@@ -112,11 +112,9 @@ const ResumeSection = () => {
                 </CardHeader>
                 <CardContent className="pt-2">
                   <ul className="list-disc list-inside space-y-2 text-muted-foreground">
-                    <li>Led a 6-person research team developing bio-inspired CNN architectures with attention mechanisms to model human visual perception, establishing lab benchmarks for human behavioral data from EEG/eye-tracking studies</li>
-                    <li>Improved model accuracy by 11% over prior lab baseline through systematic hyperparameter optimization, targeted data augmentation, and architecture refinements, achieving state-of-the-art performance on object recognition tasks</li>
-                    <li>Engineered Python data pipelines for image and behavioral datasets, reducing preprocessing time by 30% and
-                    cutting experiment turnaround time.</li>
-                    <li>Developed technical documentation and contributed to grant proposals supporting continued funding</li>
+                    <li>Led a 6-person research team developing bio-inspired CNN architectures with attention mechanisms to model human visual perception, establishing lab benchmarks for human behavioral data from EEG/eye-tracking studies.</li>
+                    <li>Improved model accuracy by 11% vs. prior lab baseline via targeted augmentation, systematic hyperparameter optimization, and architecture refinements on object recognition tasks.</li>
+                    <li>Engineered Python data pipelines for image and behavioral datasets, reducing preprocessing time by 30% through parallelization and automated quality checks.</li>
                   </ul>
                 </CardContent>
               </Card>
