@@ -45,6 +45,25 @@ const ResumeSection = () => {
                 <CardHeader className="pb-2">
                   <div className="flex justify-between items-start">
                     <div>
+                      <CardTitle className="text-lg">Machine Learning Researcher</CardTitle>
+                      <p className="text-muted-foreground italic">University of California, Berkeley</p>
+                    </div>
+                    <Badge variant="secondary">Jan 2025 - Present</Badge>
+                  </div>
+                </CardHeader>
+                <CardContent className="pt-2">
+                  <ul className="list-disc list-inside space-y-2 text-muted-foreground">
+                    <li>Built a pediatric clinical decision-support system that retrieves, reranks, and synthesizes evidence from medical literature to generate grounded answers for physician diagnostic queries.</li>
+                    <li>Designed a reproducible evaluation framework spanning retrieval recall, clinical relevance, and answer grounding; benchmarked 54 pipeline configurations with versioned experiment tracking to enable systematic comparisons.</li>
+                    <li>Selected the final pipeline architecture by quantifying faithfulness–completeness tradeoffs across retrieval strategies, rerankers, and generator LLMs, balancing answer quality against runtime constraints.</li>
+                  </ul>
+                </CardContent>
+              </Card>
+
+              <Card className="border-l-4 border-tech-accent">
+                <CardHeader className="pb-2">
+                  <div className="flex justify-between items-start">
+                    <div>
                       <CardTitle className="text-lg">Graduate Student Instructor</CardTitle>
                       <p className="text-muted-foreground italic">University of California, Berkeley</p>
                     </div>
