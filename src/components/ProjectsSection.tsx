@@ -6,8 +6,11 @@ const ProjectsSection = () => {
   const projects = [
     {
       title: "SurgiRAG",
-      description:
-        "An end-to-end surgical QA system using a fine-tuned BioBERT retriever and LoRA-adapted LLaMA-3 to generate factually grounded answers, outperforming baselines by over 40 percentage points on faithfulness metrics.",
+      bullets: [
+        "Built a domain-adaptive RAG pipeline for Q&A by fine-tuning LLaMA-3.2-11B with LoRA and pairing BioBERT retrieval with cross-encoder reranking, improving LLM-judged faithfulness from 0.25 to 0.66 vs. the base model.",
+        "Designed a custom LLM-as-judge evaluation framework using GPT-4o-mini to assess faithfulness and fluency tradeoffs not well captured by standard metrics like ROUGE and BLEU.",
+        "Evaluated 12 retrieval, reranking, and generation configurations, identifying cross-encoder reranking as the highest-leverage component for improving answer quality.",
+      ],
       tech: ["Python", "PyTorch", "HuggingFace", "PEFT (LoRA)", "FAISS", "SentenceTransformers"],
       stars: "2.3k",
       status: "Active",
@@ -25,8 +28,10 @@ const ProjectsSection = () => {
     },
     {
       title: "PathoVision",
-      description:
-        "A hybrid computer vision pipeline that classifies brain tumors with 96.7% accuracy by fusing classical features (edges, textures) with deep embeddings from a DINOv2 Vision Transformer.",
+      bullets: [
+        "Built a brain tumor MRI classifier achieving 96.7% test accuracy by combining DINOv2 embeddings with handcrafted edge features, outperforming CNN baselines with a fraction of the compute.",
+        "Identified contrast and orientation artifacts as key misclassification drivers through cross-source error analysis, leading to preprocessing changes that improved robustness across imaging sources.",
+      ],
       tech: ["Python", "PyTorch", "OpenCV", "DINOv2", "Scikit-learn", "NumPy", "Matplotlib", "PIL"],
       stars: "1.8k",
       status: "Active",
@@ -40,8 +45,11 @@ const ProjectsSection = () => {
     },
     {
       title: "AgeVoicE",
-      description:
-        "A specialized speech recognition pipeline designed to transcribe dysfluent speech patterns from older adults with dementia. Fine-tuned OpenAI's Whisper model to handle speech irregularities and orchestrated a scalable AWS inference pipeline to achieve a 17% improvement.",
+      bullets: [
+        "Fine-tuned Whisper ASR models using LoRA for older-adult and dementia-affected speech, improving WER by 17% vs. baseline; deployed via Hugging Face Inference API and an interactive web demo for real-time transcription.",
+        "Built an end-to-end AWS training pipeline with distributed training, custom preprocessing (noise removal, disfluency handling, audio normalization), experiment tracking, and systematic hyperparameter sweeps (LR, LoRA rank, dropout).",
+        "Performed stratified failure analysis across acoustic conditions and speaker characteristics using regression modeling and hypothesis testing to identify drivers of elevated WER; findings guided targeted data augmentation to mitigate demographic bias.",
+      ],
       tech: ["Python", "PyTorch", "PEFT", "Whisper", "AWS", "torchaudio", "FFmpeg", "Librosa"],
       stars: "1.2k",
       status: "Active",
