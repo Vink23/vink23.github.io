@@ -100,7 +100,11 @@ const ProjectsSection = () => {
               </CardHeader>
 
               <CardContent className="pt-2 pb-4 self-start">
-                <p className="text-base leading-relaxed text-muted-foreground">{project.description}</p>
+                <ul className="list-disc list-inside space-y-2 text-sm leading-relaxed text-muted-foreground">
+                  {project.bullets.map((bullet, idx) => (
+                    <li key={idx}>{bullet}</li>
+                  ))}
+                </ul>
               </CardContent>
 
               <CardContent className="pt-0 pb-4">
