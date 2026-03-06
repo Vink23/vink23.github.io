@@ -53,9 +53,9 @@ const ResumeSection = () => {
                 </CardHeader>
                 <CardContent className="pt-2">
                   <ul className="list-disc list-inside space-y-2 text-muted-foreground">
-                    <li>Built a pediatric clinical decision-support system that retrieves, reranks, and synthesizes evidence from medical literature to generate grounded answers for physician diagnostic queries.</li>
-                    <li>Designed a reproducible evaluation framework spanning retrieval recall, clinical relevance, and answer grounding; benchmarked 54 pipeline configurations with versioned experiment tracking to enable systematic comparisons.</li>
-                    <li>Selected the final pipeline architecture by quantifying faithfulness–completeness tradeoffs across retrieval strategies, rerankers, and generator LLMs, balancing answer quality against runtime constraints.</li>
+                    <li>Engineer an LLM-powered clinical decision-support system for physician-facing Q&A, combining dense retrieval, cross-encoder reranking, and grounded generation over medical literature to produce faithfully sourced diagnostic answers.</li>
+                    <li>Build a reproducible evaluation pipeline to benchmark 54 retrieval, reranking, and generation configurations across recall, clinical relevance, and answer grounding, replacing ad hoc model selection with a systematic, versioned process.</li>
+                    <li>Identify failure patterns across disease categories and patient age groups through stratified error analysis, directly informing retrieval and model changes that reduced performance gaps across underrepresented diagnostic categories.</li>
                   </ul>
                 </CardContent>
               </Card>
