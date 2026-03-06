@@ -108,8 +108,8 @@ const ResumeSection = () => {
                 </CardHeader>
                 <CardContent className="pt-2">
                   <ul className="list-disc list-inside space-y-2 text-muted-foreground">
-                    <li>Engineered data ingestion pipelines processing high-frequency physiological signals from 3,000+ Apple Watch devices, reducing integration time by 15% and enabling rapid iteration on Apple Health's hypertension detection algorithms.</li>
-                    <li>Led end-to-end FDA-compliant validation for biosensor clinical trials, achieving 100% pass rate on QA audits through rigorous statistical validation and bias analysis; work enabled product launch for a health monitoring platform.</li>
+                    <li>Engineered data pipelines processing high-frequency physiological signals from 3,000+ Apple Watch devices, reducing integration time by 15% and enabling rapid iteration on Apple Health's hypertension detection algorithms.</li>
+                    <li>Led end-to-end FDA-compliant validation for biosensor clinical trials, achieving a 100% pass rate on QA audits through rigorous statistical validation and bias analysis; work enabled product launch for a health monitoring platform.</li>
                     <li>Conducted fairness-aware analysis of biosensor signals across demographic subgroups (age, gender, skin tone), identifying algorithm performance disparities that informed design changes, improving signal-quality acceptance by 25% and reducing group-level performance gaps.</li>
                   </ul>
                 </CardContent>
