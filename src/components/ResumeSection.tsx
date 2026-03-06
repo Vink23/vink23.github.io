@@ -72,9 +72,7 @@ const ResumeSection = () => {
                 </CardHeader>
                 <CardContent className="pt-2">
                   <ul className="list-disc list-inside space-y-2 text-muted-foreground">
-                    <li>Mentored 80+ master's students on research design and ML applications, improving average project scores by 12% through structured guidance on experimental design, causal inference, and statistical rigor</li>
-                    <li>Delivered feedback on 40+ research projects involving predictive modeling, A/B testing, and causal analysis, raising proposal quality by 20% as measured by rubric scores</li>
-                    
+                    <li>Design and grade assignments for 80+ students in causal inference, experimental design, and statistical analysis, providing written feedback to reinforce applied research skills.</li>
                   </ul>
                 </CardContent>
               </Card>
